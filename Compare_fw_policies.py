@@ -75,11 +75,14 @@ class Compare_fw_policies(Routing_information,Utility_function):
            div_value = max(div_value_list)           
            standard_value = int(new_ip_value.split("/")[1])
 
+           print "div_value : %s, standard_value : %s" % (str(div_value),str(standard_value))
+
            comparing_net_module = IPNetwork(comparing_network) 
            first_division_module = list(comparing_net_module.subnet(standard_value))
            input_net_module = IPNetwork(new_ip_value)
            if input_net_module in first_division_module:
-             matched_net_info.append([current_zone_name, comparing_network])
+             # matched_net_info.append([current_zone_name, comparing_network])
+             matched_net_info.append([current_zone_name, input_network])
          ## input = small net(mask is big), comparing = big(mask is small)
          ## end of "if int(input_mask_value) > int(comparing_mask_value):"
 
@@ -126,9 +129,9 @@ class Compare_fw_policies(Routing_information,Utility_function):
                   index_number = index_number + 1
              ## find out target
              if change_status == None:
-               return_result_list.append([ruleid, current_zone_name, comparing_network]) 
+               return_result_list.append([_x_rule_id, current_zone_name, comparing_network]) 
              else:
-               return_result_list[index_number] = [ruleid, current_zone_name, comparing_network]
+               return_result_list[index_number] = [_x_rule_id, current_zone_name, comparing_network]
       # end of "for candi_netmask in self.zone_candidate_network:" 
 
       # Longest match , small network calcuration 
@@ -152,6 +155,7 @@ class Compare_fw_policies(Routing_information,Utility_function):
              return_result_list.append([ruleid, current_zone_name, comparing_network])
       # end of "for candi_netmask in self.zone_candidate_network:"
       end_time = time.time()
+      print return_result_list
       print "[%s/%s] done, process time : %s" % (str(thread_count),str(total_number),str(int(end_time)-int(start_time)))
       thread_count = thread_count + 1
    # end of "for string_ruleid_and_object in string_ruleid_and_object_list:"
@@ -159,6 +163,9 @@ class Compare_fw_policies(Routing_information,Utility_function):
 
 
   def _varidation_check( self, value_in_list ):
+
+
+     print value_in_list
 
      return_true_or_not = True
      # find sequence list 
@@ -171,6 +178,7 @@ class Compare_fw_policies(Routing_information,Utility_function):
      max_seqid = sequence_list[-1]
      self.policy_sequence_count = max_seqid
 
+     real_index = 0
      for index in range(int(max_seqid)):
         real_index = index + 1
         if str(real_index) not in sequence_list:
