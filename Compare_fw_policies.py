@@ -30,6 +30,14 @@ class Compare_fw_policies(Routing_information,Utility_function):
       input_ip_value = ip_value
       input_mask_value = mask_value
 
+      # input status check
+      if input_network == "0.0.0.0/0":
+        return_result_list.append([ruleid, self.default_zone_name, input_network])
+        end_time = time.time()
+        print "[%s/%s] done, process time : %s" % (str(thread_count),str(total_number),str(int(end_time)-int(start_time)))
+        thread_count = thread_count + 1
+        continue
+
       # Longest match , Big network calcuration 
       matched_net_info = []
       for candi_netmask in self.zone_candidate_network:
@@ -143,7 +151,6 @@ class Compare_fw_policies(Routing_information,Utility_function):
            if comparing_net_module in first_division_module:
              return_result_list.append([ruleid, current_zone_name, comparing_network])
       # end of "for candi_netmask in self.zone_candidate_network:"
-      print return_result_list 
       end_time = time.time()
       print "[%s/%s] done, process time : %s" % (str(thread_count),str(total_number),str(int(end_time)-int(start_time)))
       thread_count = thread_count + 1
