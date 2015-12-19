@@ -34,7 +34,7 @@ class Compare_fw_policies(Routing_information,Utility_function):
       if input_network == "0.0.0.0/0":
         return_result_list.append([ruleid, self.default_zone_name, input_network])
         end_time = time.time()
-        print "[%s/%s] done, process time : %s" % (str(thread_count),str(total_number),str(int(end_time)-int(start_time)))
+        print "[%s/%s] done, process time : %s, %s" % (str(thread_count),str(total_number),str(int(end_time)-int(start_time)),str([ruleid, self.default_zone_name, input_network]))
         thread_count = thread_count + 1
         continue
 
@@ -74,8 +74,6 @@ class Compare_fw_policies(Routing_information,Utility_function):
              
            div_value = max(div_value_list)           
            standard_value = int(new_ip_value.split("/")[1])
-
-           print "div_value : %s, standard_value : %s" % (str(div_value),str(standard_value))
 
            comparing_net_module = IPNetwork(comparing_network) 
            first_division_module = list(comparing_net_module.subnet(standard_value))
@@ -155,8 +153,7 @@ class Compare_fw_policies(Routing_information,Utility_function):
              return_result_list.append([ruleid, current_zone_name, comparing_network])
       # end of "for candi_netmask in self.zone_candidate_network:"
       end_time = time.time()
-      print return_result_list
-      print "[%s/%s] done, process time : %s" % (str(thread_count),str(total_number),str(int(end_time)-int(start_time)))
+      print "[%s/%s] done, process time : %s, %s" % (str(thread_count),str(total_number),str(int(end_time)-int(start_time)),str(return_result_list[-1]))
       thread_count = thread_count + 1
    # end of "for string_ruleid_and_object in string_ruleid_and_object_list:"
    return return_result_list # def Insert_zone_category( self, string_ruleid_and_object_list ):
