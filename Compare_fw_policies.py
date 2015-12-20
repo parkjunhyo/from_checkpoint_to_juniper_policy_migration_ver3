@@ -161,9 +161,6 @@ class Compare_fw_policies(Routing_information,Utility_function):
 
   def _varidation_check( self, value_in_list ):
 
-
-     print value_in_list
-
      return_true_or_not = True
      # find sequence list 
      sequence_list = []
