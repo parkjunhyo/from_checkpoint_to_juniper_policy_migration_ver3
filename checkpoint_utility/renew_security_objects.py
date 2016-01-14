@@ -1,6 +1,7 @@
 #! /usr/bin/env python
 
 import os, random, time
+from ipaddr import IPAddress as ip_address
 
 origin_src_data = "./source.gen"
 origin_dst_data = "./destination.gen"
@@ -55,8 +56,17 @@ def lookup_object(policy_no_in, policy_object_in):
         renew_matched_info = f.readlines()
         f.close()
         os.system("rm -rf ./%s" % (r_file))
-        
         print "\t".join([policy_no_in,renew_matched_info[0].rstrip()])
+
+      if matched_name == object_name and matched_type == "Address Range":
+        first_ip = ip_address(str(matched_ip.split()[0]))
+        last_ip = ip_address(str(matched_ip.split()[2]))
+        range_ip_list = []
+        while first_ip <= last_ip:
+           range_ip_list.append(str(first_ip))
+           print object_name
+           print "\t".join([policy_no_in, str(first_ip)])
+           first_ip = first_ip + 1
 
 
 list_index = 0
