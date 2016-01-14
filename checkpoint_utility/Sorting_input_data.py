@@ -187,19 +187,9 @@ class Sorting_input_data:
 
  def Start( self ):
 
-   # varidate the object file
-   object_file_contents = self.File_readlines_output_list( "./Objects_table.txt" )
-   object_file_contents_list = []
-   for content_in_file in object_file_contents:
-      content_without_side_blank = content_in_file.strip()
-      content_list = content_without_side_blank.split("\t")
-      if len(content_list) != 6:  # name type ip network nat_address member
-         print "\""+ content_without_side_blank + "\" is not proper input data"
-         sys.exit(0)
-      object_file_contents_list.append( content_list )
     
    # varidate the data file 
-   varidated_source_list = self.Raw_datafile_verification( "./Raw_source_data.txt" )
+   varidated_source_list = self.Raw_datafile_verification( "./source.gen" )
 
    # distribute
    data_tobe_write = self.Distributed_by_objecttype( varidated_source_list, object_file_contents_list )
@@ -215,7 +205,7 @@ class Sorting_input_data:
 
    # varidate the data file 
    self.distributed_policies_list_in_list = []
-   varidated_destination_list = self.Raw_datafile_verification( "./Raw_destination_data.txt" )
+   varidated_destination_list = self.Raw_datafile_verification( "./destination.gen" )
 
    # distribute
    data_tobe_write = self.Distributed_by_objecttype( varidated_destination_list, object_file_contents_list )
@@ -231,7 +221,7 @@ class Sorting_input_data:
 
    # varidate the data file
    self.distributed_policies_list_in_list = []
-   varidated_service_list = self.Raw_datafile_verification( "./Raw_service_data.txt" )
+   varidated_service_list = self.Raw_datafile_verification( "./service.gen" )
 
    # output verification
    self.Output_verification( varidated_service_list )
