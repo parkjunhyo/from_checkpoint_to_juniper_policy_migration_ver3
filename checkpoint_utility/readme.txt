@@ -15,7 +15,8 @@ Step 2. generate the completed policy rule
         run "gen_security_objects.py" file to create "source.gen", "destination.gen" and "service.gen"
 
 Step 3. re-arrange full policy file
-        run "renew_security_objects.py"
+        run "renew_security_objects.py" file to create "destination.renew", "service.renew" and "source.renew"
+        this is final file
         
 
              
