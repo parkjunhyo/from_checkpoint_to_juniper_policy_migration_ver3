@@ -22,7 +22,7 @@ def lookup_object(policy_no_in, policy_object_in, output_file_name):
 
    if policy_object_in == "Any\n":
      f = open(output_file_name,"a")
-     f.write("\t".join([policy_no_in, "0.0.0.0/0"]))
+     f.write("\t".join([policy_no_in, "0.0.0.0/0\n"]))
      f.close()
 
    object_name = policy_object_in.rstrip()
@@ -49,7 +49,7 @@ def lookup_object(policy_no_in, policy_object_in, output_file_name):
 
       if matched_name == object_name and matched_type == "Host Node":
         f = open(output_file_name,"a")
-        f.write("\t".join([policy_no_in, matched_ip+"/32"]))
+        f.write("\t".join([policy_no_in, matched_ip+"/32\n"]))
         f.close()
 
       if matched_name == object_name and (matched_type == "Check Point Host" or matched_type == "Gateway Cluster" or matched_type =="Check Point Gateway" or matched_type =="Cluster Member"):
@@ -63,7 +63,7 @@ def lookup_object(policy_no_in, policy_object_in, output_file_name):
           os.system("rm -rf ./%s" % (r_file))
           renew_subnet_size = renew_matched_info[0].rstrip().split("/")[1]
           f = open(output_file_name,"a")
-          f.write("\t".join([policy_no_in,matched_ip+"/"+renew_subnet_size]))
+          f.write("\t".join([policy_no_in,matched_ip+"/"+renew_subnet_size+"\n"]))
           f.close()
 
       if matched_name == object_name and matched_type == "Group":
@@ -78,7 +78,7 @@ def lookup_object(policy_no_in, policy_object_in, output_file_name):
         f.close()
         os.system("rm -rf ./%s" % (r_file))
         f = open(output_file_name,"a")
-        f.write("\t".join([policy_no_in,renew_matched_info[0].rstrip()]))
+        f.write("\t".join([policy_no_in,renew_matched_info[0].rstrip()+"\n"]))
         f.close()
 
       if matched_name == object_name and matched_type == "Address Range":
@@ -88,7 +88,7 @@ def lookup_object(policy_no_in, policy_object_in, output_file_name):
         while first_ip <= last_ip:
            range_ip_list.append(str(first_ip))
            f = open(output_file_name,"a")
-           f.write("\t".join([policy_no_in, str(first_ip)+"/32"]))
+           f.write("\t".join([policy_no_in, str(first_ip)+"/32\n"]))
            f.close()
            first_ip = first_ip + 1
    
