@@ -22,6 +22,7 @@ def lookup_object(policy_no_in, policy_object_in, output_file_name):
      f = open(output_file_name,"a")
      f.write("\t".join([policy_no_in, "0.0.0.0/0\n"]))
      f.close()
+     return
 
    object_name = policy_object_in.rstrip()
    random_name = str(random.random())
