@@ -1,0 +1,1415 @@
+Services	-	-	-	-	-	-	-
+Name	Type	Port / Protocol	Protocol Type	Match For Any	Source Port	Members	Comments
+AH	other	51	-	TRUE	-	-	IPSEC Authentication Header Protocol
+ALL_DCE_RPC	DceRpc	-	-	-	-	-	Special Service For Allowing All DCE-RPC Services
+AOL	tcp	5190	-	TRUE	-	-	AOL Instant Messenger. Also used by: ICQ & Apple iChat
+AOL_Messenger	group	-	-	-	-	AOL	AOL Instant Messenger. Also used by: ICQ & Apple iChat
+-	-	-	-	-	-	ICQ_locator	-
+AP-Defender	tcp	2626	-	TRUE	-	-	Defender Authentication service
+AT-Defender	tcp	2626	-	FALSE	-	-	Defender Authentication service
+Authenticated	group	-	-	-	-	telnet	Authenticated group
+-	-	-	-	-	-	ftp	-
+-	-	-	-	-	-	http	-
+-	-	-	-	-	-	login	-
+BGP	TCP	179	-	FALSE	-	-	Border Gateway Protocol
+Backage	Tcp	411	-	FALSE	-	-	Backage trojan
+Bionet-Setup	Tcp	5000	-	FALSE	-	-	Also used by: Blazer5 , Bubbel and Back-door trojans
+Blubster	Udp	41170	-	TRUE	-	-	Uses MANOLITO protocol
+CIFS	group	-	-	-	-	microsoft-ds	Common Internet File System Services
+-	-	-	-	-	-	NBT	-
+CPD	tcp	18191	-	TRUE	-	-	Check Point Daemon Protocol
+CPD_amon	tcp	18192	-	TRUE	-	-	Check Point Internal Application Monitoring
+CPMI	tcp	18190	-	TRUE	-	-	Check Point Management Interface
+CP_Exnet_PK	tcp	18262	-	TRUE	-	-	Check Point Extranet public key resolution
+CP_Exnet_resolve	tcp	18263	-	TRUE	-	-	Check Point Extranet remote objects resolution
+CP_SSL_Network_Extender	Tcp	444	-	FALSE	-	-	SSL Network Extender port
+CP_SecureAgent-udp	Udp	19194-19195	-	FALSE	-	-	SecureAgent Authentication service
+CP_SmartPortal	Tcp	4433	-	TRUE	-	-	Check Point Smart Portal
+CP_redundant	tcp	18221	-	TRUE	-	-	Check Point Redundant Management Protocol
+CP_reporting	tcp	18205	-	TRUE	-	-	Check Point Reporting Client Protocol
+CP_rtm	tcp	18202	-	TRUE	-	-	Check Point Real Time Monitoring
+CP_seam	Tcp	18266	-	TRUE	-	-	Check Point Eventia Analyzer Server Protocol
+CU-SeeMe	udp	7648-7652	-	TRUE	-	-	person-to-person or group discussions videoconference
+Cdf	Tcp_subservice	80	-	-	-	-	http subservice for FloodGate use,Channel Definition Format
+CheckPointExchangeAgent	Tcp	18301	SMTP	TRUE	-	-	-
+Citrix_ICA	Tcp	1494	CitrixICA	FALSE	-	-	Citrix ICA general Service.
+Citrix_ICA_Browsing	Udp	1604	-	FALSE	-	-	UDP Service for general Citrix browsing
+Citrix_ICA_printing	tcp_citrix	1494	-	-	-	-	Citrix ICA printing traffic
+Citrix_metaFrame	group	-	-	-	-	Citrix_ICA	group for citrix communication
+-	-	-	-	-	-	Citrix_ICA_Browsing	-
+ConnectedOnLine	tcp	16384	-	TRUE	-	-	-
+CrackDown	Tcp	4444	-	FALSE	-	-	CrackDown trojan
+CreativePartnerClnt	tcp	455	-	TRUE	-	-	The Client listening port
+CreativePartnerSrvr	tcp	453	-	TRUE	-	-	The Server listening port
+DAIP_Control_services	group	-	-	-	-	CPD	-
+-	-	-	-	-	-	FW1	-
+-	-	-	-	-	-	FW1_ica_pull	-
+-	-	-	-	-	-	FW1_log	-
+DB_Access_Port_Grp	group	-	-	-	-	MySQL	-
+-	-	-	-	-	-	TCP_3316	-
+-	-	-	-	-	-	TCP_3317	-
+-	-	-	-	-	-	TCP_3318	-
+-	-	-	-	-	-	TCP_3319	-
+-	-	-	-	-	-	MS-SQL-Server	-
+-	-	-	-	-	-	TCP_1700	-
+-	-	-	-	-	-	sqlnet1	-
+-	-	-	-	-	-	TCP_1527	-
+-	-	-	-	-	-	PostgreSQL	-
+-	-	-	-	-	-	TCP_20300	-
+-	-	-	-	-	-	TCP_27017	-
+-	-	-	-	-	-	Remote_Desktop_Protocol	-
+-	-	-	-	-	-	TCP_5901	-
+DB_Mgmt	group	-	-	-	-	MySQL	-
+-	-	-	-	-	-	MS-SQL-Server	-
+-	-	-	-	-	-	sqlnet1	-
+-	-	-	-	-	-	PostgreSQL	-
+-	-	-	-	-	-	TCP_3316	-
+-	-	-	-	-	-	TCP_3317	-
+-	-	-	-	-	-	TCP_3318	-
+-	-	-	-	-	-	TCP_3319	-
+-	-	-	-	-	-	TCP_1700	-
+-	-	-	-	-	-	TCP_1527	-
+-	-	-	-	-	-	TCP_20300	-
+-	-	-	-	-	-	TCP_27017	-
+DCOM-OXID_Resolver	DceRpc	-	-	-	-	-	Object eXport IDentifier Resolver Interface
+DCOM-RemUnknown2	DceRpc	-	-	-	-	-	Remote Unknown2 DCOM Interface
+DCOM-RemoteActivation	dcerpc	-	-	-	-	-	DCOM Remote Activation
+DCOM-SystemActivation	DceRpc	-	-	-	-	-	DCOM SystemActivation Interface
+DIC_Monitoring	group	-	-	-	-	HTTP_and_HTTPS_proxy	-
+-	-	-	-	-	-	TCP_8888	-
+-	-	-	-	-	-	TCP_9000	-
+-	-	-	-	-	-	TCP_10000	-
+-	-	-	-	-	-	TCP_10100	-
+-	-	-	-	-	-	TCP_10200	-
+-	-	-	-	-	-	TCP_11000	-
+-	-	-	-	-	-	TCP_11100	-
+-	-	-	-	-	-	TCP_11200	-
+-	-	-	-	-	-	TCP_25000	-
+-	-	-	-	-	-	TCP_25010	-
+-	-	-	-	-	-	TCP_25020	-
+-	-	-	-	-	-	TCP_50030	-
+-	-	-	-	-	-	TCP_50040	-
+-	-	-	-	-	-	TCP_50060	-
+-	-	-	-	-	-	TCP_50070	-
+-	-	-	-	-	-	TCP_50075	-
+-	-	-	-	-	-	TCP_60010	-
+-	-	-	-	-	-	TCP_60020	-
+-	-	-	-	-	-	TCP_60030	-
+DI_Tstore_DB	group	-	-	-	-	TCP_7809	-
+-	-	-	-	-	-	TCP_7810	-
+-	-	-	-	-	-	TCP_7811	-
+-	-	-	-	-	-	TCP_7812	-
+-	-	-	-	-	-	TCP_7813	-
+-	-	-	-	-	-	TCP_7814	-
+-	-	-	-	-	-	TCP_7815	-
+-	-	-	-	-	-	TCP_7816	-
+-	-	-	-	-	-	TCP_7817	-
+-	-	-	-	-	-	TCP_7818	-
+DNP3	Tcp	20000	-	TRUE	-	-	DNP3 is a set of communications protocols used between components in process automation systems. Its main use is in utilities such as electric and water companies
+DaCryptic	Tcp	1074	-	TRUE	-	-	DaCryptic trojan
+DameWare	Tcp	6129	-	TRUE	-	-	DameWare Mini Remote Control Protocol
+DerSphere	Tcp	1000	-	TRUE	-	-	Also used by: Direct Connection,Connecter,Insane Network trojans
+DerSphere_II	Tcp	2000	-	FALSE	-	-	Also used by:Insane Network,Last 2000,Remote Explorer 2000,Senna Spy Trojan Generator trojans
+Direct_Connect	group	-	-	-	-	Direct_Connect_TCP	Direct Connect P2P application. Used also by other clients
+-	-	-	-	-	-	Direct_Connect_UDP	-
+Direct_Connect_TCP	Tcp	411-412	-	TRUE	-	-	Direct Connect P2P application. Used also by other clients
+Direct_Connect_UDP	Udp	411-412	-	TRUE	-	-	Direct Connect P2P application. Used also by other clients
+E2ECP	udp	18241	-	TRUE	-	-	Check Point End to End Control Protocol
+EAI_Port_Grp	group	-	-	-	-	TCP_5591	-
+-	-	-	-	-	-	TCP_5592	-
+-	-	-	-	-	-	TCP_1515	-
+-	-	-	-	-	-	TCP_8484	-
+-	-	-	-	-	-	TCP_1414	-
+-	-	-	-	-	-	TCP_9494	-
+-	-	-	-	-	-	TCP_9595	-
+-	-	-	-	-	-	TCP_5555	-
+-	-	-	-	-	-	TCP_5556	-
+EDGE	TCP	981	-	FALSE	-	-	VPN-1 UTM Edge Portal
+ESP	other	50	-	TRUE	-	-	IPSEC Encapsulating Security Payload Protocol
+EndPointMapper	dcerpc	-	-	-	-	-	Dcerpc End Point Mapper service
+Entrust-Admin	tcp	710	-	TRUE	-	-	Entrust CA Administration Service
+Entrust-CA	group	-	-	-	-	Entrust-Admin	Entrust CA Services
+-	-	-	-	-	-	Entrust-KeyMgmt	-
+Entrust-KeyMgmt	tcp	709	-	TRUE	-	-	Entrust CA Key Management Service
+FIBMGR	Tcp	2010	-	TRUE	-	-	Forwarding Information Base Manager - Dynamic Routing Cluster config
+FW1	Tcp	256	-	TRUE	-	-	Check Point Security Gateway Service
+FW1_CPRID	tcp	18208	-	TRUE	-	-	Check Point Remote Installation Protocol
+FW1_Encapsulation	other	94	-	TRUE	-	-	Check Point VPN-1 SecuRemote FWZ Encapsulation Protocol
+FW1_amon	tcp	18193	-	TRUE	-	-	Check Point OPSEC Application Monitoring
+FW1_clntauth	group	-	-	-	-	FW1_clntauth_telnet	Check Point Security Gateway Client Authentication
+-	-	-	-	-	-	FW1_clntauth_http	-
+FW1_clntauth_http	tcp	900	-	TRUE	-	-	Check Point Security Gateway Client Authentication (HTTP)
+FW1_clntauth_telnet	tcp	259	-	TRUE	-	-	Check Point Security Gateway Client Authentication (Telnet)
+FW1_cvp	tcp	18181	FW1_CVP	TRUE	-	-	Check Point OPSEC Content Vectoring Protocol
+FW1_ela	tcp	18187	-	TRUE	-	-	Check Point OPSEC Event Logging API
+FW1_ica_mgmt_tools	tcp	18265	-	TRUE	-	-	Check Point Internal CA Management Tools
+FW1_ica_pull	tcp	18210	-	TRUE	-	-	Check Point Internal CA Pull Certificate Service
+FW1_ica_push	tcp	18211	-	TRUE	-	-	Check Point Internal CA Push Certificate Service
+FW1_ica_services	tcp	18264	-	TRUE	-	-	Check Point Internal CA Fetch CRL and User Registration Services
+FW1_key	tcp	265	-	TRUE	-	-	Check Point VPN-1 Public Key Transfer Protocol
+FW1_lea	tcp	18184	-	TRUE	-	-	Check Point OPSEC Log Export API
+FW1_load_agent	udp	18212	-	TRUE	-	-	Check Point ConnectControl Load Agent
+FW1_log	tcp	257	-	TRUE	-	-	Check Point Security Gateway Logs
+FW1_mgmt	tcp	258	-	TRUE	-	-	Check Point Management (Version 4.x)
+FW1_netso	Tcp	19190	-	TRUE	-	-	Check Point User Authority simple protocol
+FW1_omi	tcp	18185	-	TRUE	-	-	Check Point OPSEC Objects Management Interface
+FW1_omi-sic	tcp	18186	-	TRUE	-	-	Check Point OPSEC Objects Management Interface with Secure Internal Communication
+FW1_pslogon	Tcp	18207	-	TRUE	-	-	Check Point Policy Server Logon protocol
+FW1_pslogon_NG	Tcp	18231	-	TRUE	-	-	Check Point NG Policy Server Logon protocol
+FW1_sam	tcp	18183	-	TRUE	-	-	Check Point OPSEC Suspicious Activity Monitor API
+FW1_scv_keep_alive	udp	18233	-	TRUE	-	-	Check Point SecureClient Verification Keepalive Protocol
+FW1_sds_logon	Tcp	18232	-	TRUE	-	-	Check Point SecuRemote Distribution Server Protocol
+FW1_sds_logon_NG	Tcp	65524	-	TRUE	-	-	SecuRemote Distribution Server Protocol (VC and higher)
+FW1_snauth	tcp	261	-	TRUE	-	-	Check Point Security Gateway Session Authentication
+FW1_snmp	udp	260	-	TRUE	-	-	Check Point Security Gateway SNMP Agent
+FW1_topo	tcp	264	-	TRUE	-	-	Check Point VPN-1 SecuRemote Topology Requests
+FW1_uaa	Tcp	19191	-	TRUE	-	-	Check Point OPSEC User Authority API
+FW1_ufp	tcp	18182	-	TRUE	-	-	Check Point OPSEC URL Filtering Protocol
+Freak2k	Tcp	7001	-	TRUE	-	-	Also used by: Freak88,NetSnooper Gold trojans
+FreeTel-incoming	other	17	-	FALSE	-	-	FreeTel Incoming Connections
+FreeTel-outgoing	group	-	-	-	-	FreeTel-outgoing-server	FreeTel Outgoing Connections
+-	-	-	-	-	-	FreeTel-outgoing-client	-
+FreeTel-outgoing-client	other	17	-	FALSE	-	-	real-time full-duplex voice communication via the Internet-client
+FreeTel-outgoing-server	Udp	21300	FreeTel	FALSE	21301-21305	-	real-time full-duplex voice communication via the Internet-server
+GNUtella	group	-	-	-	-	GNUtella_rtr_TCP	GNUtella P2P protocol (used by: BearShare, ToadNode, Gnucleus, Xolox, LimeWire)
+-	-	-	-	-	-	GNUtella_rtr_UDP	-
+-	-	-	-	-	-	GNUtella_TCP	-
+-	-	-	-	-	-	GNUtella_UDP	-
+GNUtella_TCP	Tcp	6346	-	TRUE	-	-	Also used by: BearShare, ToadNode, Gnucleus, Xolox, LimeWire
+GNUtella_UDP	Udp	6346	-	TRUE	-	-	Also used by: BearShare, ToadNode, Gnucleus, Xolox, LimeWire
+GNUtella_rtr_TCP	Tcp	6347	-	TRUE	-	-	Also used by: BearShare, ToadNode, Gnucleus, Xolox, LimeWire
+GNUtella_rtr_UDP	Udp	6347	-	TRUE	-	-	Also used by: BearShare, ToadNode, Gnucleus, Xolox, LimeWire
+GateCrasher	Tcp	6970	-	TRUE	-	-	GateCrasher trojan
+GoToMyPC	Tcp	8200	-	TRUE	-	-	Remote Computer Access & Sharing application, also uses HTTP and HTTPS
+H323	tcp	1720	H.323	TRUE	-	-	videoconference transmissions over IP networks
+H323_any	tcp	1720	H.323_ANY	FALSE	-	-	videoconference transmissions over IP networks
+H323_ras	udp	1719	H.323_RAS	FALSE	-	-	RAS and associated connections (H.323 protocols)
+H323_ras_only	udp	1719	-	TRUE	-	-	Endpoint to Gatekeeper and Gatekeeper to Gatekeeper communication
+HP-OpCctla	dcerpc	-	-	-	-	-	HP-OV OpC Control Agent
+HP-OpCctla-bulk	dcerpc	-	-	-	-	-	HP-OV OpC Control Agent (Bulk)
+HP-OpCctla-cfgpush	dcerpc	-	-	-	-	-	HP-OV OpC Control Agent (cfgpush)
+HP-OpCdistm	dcerpc	-	-	-	-	-	HP-OV OpC Distribution Manager
+HP-OpCmsgrd-coa	dcerpc	-	-	-	-	-	HP-OV OpC Message receiver (COA)
+HP-OpCmsgrd-m2m	dcerpc	-	-	-	-	-	HP-OV OpC Message Receiver (M2M)
+HP-OpCmsgrd-std	dcerpc	-	-	-	-	-	HP-OV OpC Message Receiver
+HTTP_and_HTTPS_proxy	Tcp	8080	-	FALSE	-	-	-
+HTTP_wo_SCV	other	6	-	FALSE	-	-	HTTP without SCV enforcement
+HackaTack_31785	Tcp	31785	-	TRUE	-	-	HackaTack
+HackaTack_31787	Tcp	31787	-	TRUE	-	-	HackaTack trojan
+HackaTack_31788	Tcp	31788	-	TRUE	-	-	HackaTack trojan
+HackaTack_31789	Udp	31789	-	TRUE	-	-	HackaTack trojan
+HackaTack_31790	Tcp	31790	-	TRUE	-	-	HackaTack trojan
+HackaTack_31791	Udp	31791	-	TRUE	-	-	HackaTack trojan
+HackaTack_31792	Tcp	31792	-	TRUE	-	-	HackaTack trojan
+Host_5071	Tcp	5071	-	TRUE	-	-	-
+Hotline	group	-	-	-	-	Hotline_client	Hotline P2P protocol
+-	-	-	-	-	-	Hotline_tracker	-
+Hotline_client	Tcp	5500-5503	-	TRUE	-	-	Hotline client connections
+Hotline_tracker	Udp	5499	-	TRUE	-	-	Hotline tracker connections
+ICCP	Tcp	102	-	TRUE	-	-	ICCP is used by utility organizations throughout the world to provide data exchange over wide area networks (WANs) between utility control centers, utilities, power pools, regional control centers and Non-Utility Generators
+ICKiller	Tcp	1027	-	TRUE	-	-	ICKiller
+ICMP-node-information-query	icmpv6	-	-	-	-	-	-
+ICMP-node-information-response	icmpv6	-	-	-	-	-	-
+ICQ_locator	Udp	4000	-	TRUE	-	-	Mirabilis ICQ versions
+IKE	udp	500	-	TRUE	-	-	IPSEC Internet Key Exchange Protocol (formerly ISAKMP/Oakley)
+IKE_NAT_TRAVERSAL	Udp	4500	-	TRUE	-	-	Nat Traversal Protocol
+IKE_tcp	tcp	500	-	TRUE	-	-	IPSEC Internet Key Exchange Protocol over TCP
+IMAP-SSL	TCP	993	-	FALSE	-	-	SSL encrypted IMAP
+IPSEC	group	-	-	-	-	AH	IPSEC Services
+-	-	-	-	-	-	ESP	-
+-	-	-	-	-	-	SKIP	-
+-	-	-	-	-	-	IKE	-
+-	-	-	-	-	-	VPN1_IPSEC_encapsulation	-
+IPSO_Clustering_Mgmt_Protocol	Tcp	1111	-	TRUE	-	-	used for distributing configuration changes among cluster members and cluster wide monitoring
+IP_Mobility	Other	55	-	FALSE	-	-	IP Mobility protocol
+IPv6_group	group	-	-	-	-	echo-request6	-
+-	-	-	-	-	-	destination-unreachable	-
+-	-	-	-	-	-	home-agent-address-discovery	-
+-	-	-	-	-	-	home-agent-address-discovery2	-
+-	-	-	-	-	-	ICMP-node-information-query	-
+-	-	-	-	-	-	ICMP-node-information-response	-
+-	-	-	-	-	-	inverse-neighbor-discovery	-
+-	-	-	-	-	-	inverse-neighbor-discovery2	-
+-	-	-	-	-	-	mobile-prefix-advertisement	-
+-	-	-	-	-	-	mobile-prefix-solicitation	-
+-	-	-	-	-	-	multicast-listener-done	-
+-	-	-	-	-	-	multicast-listener-query	-
+-	-	-	-	-	-	multicast-listener-report	-
+-	-	-	-	-	-	neighbor-advertisement	-
+-	-	-	-	-	-	neighbor-solicitation	-
+-	-	-	-	-	-	packet_too-big	-
+-	-	-	-	-	-	parameter-problem	-
+-	-	-	-	-	-	reserved	-
+-	-	-	-	-	-	router-advertisement	-
+-	-	-	-	-	-	router-renumbering	-
+-	-	-	-	-	-	router-solicitation	-
+-	-	-	-	-	-	time-exceeded6	-
+InCommand	Tcp	1029	-	TRUE	-	-	Also used by: ICQ Nuke 98 trojan
+Integrity_Server	group	-	-	-	-	ZSP	Accessing Endpoint Security Server from SecureClient
+-	-	-	-	-	-	HTTP_wo_SCV	-
+Jade	Tcp	1024	-	TRUE	-	-	Also used by: Latinus,NetSpy,RAT trojans and K Display Manager
+KaZaA	Tcp	1214	-	TRUE	-	-	FastTrack (KaZaA/Morpheus) P2P Protocol
+Kaos	Tcp	1212	-	TRUE	-	-	Kaos trojan
+Kerberos_v5_TCP	Tcp	88	-	TRUE	-	-	Kerberos authentication protocol (version 5)
+Kerberos_v5_UDP	Udp	88	-	TRUE	-	-	Kerberos authentication protocol (version 5)
+Kuang2	Tcp	17300	-	TRUE	-	-	Kuang2 trojan
+L2TP	Udp	1701	-	TRUE	-	-	Layer 2 Tunneling Protocol
+MGCP_dynamic_ports	other	-1	-	FALSE	-	-	Allows MGCP connection to be opened on a dynamic port and not on the MGCP well-known ports
+MS-SQL	group	-	-	-	-	MS-SQL-Monitor	MS-SQL Server Protocols
+-	-	-	-	-	-	MS-SQL-Monitor_UDP	-
+-	-	-	-	-	-	MS-SQL-Server	-
+-	-	-	-	-	-	MS-SQL-Server_UDP	-
+MS-SQL-Monitor	Tcp	1434	-	TRUE	-	-	Microsoft SQL Monitor
+MS-SQL-Monitor_SD	Other	17	-	FALSE	-	-	MSSQL Monitor service with SmartDefense protection
+MS-SQL-Monitor_UDP	Udp	1434	-	TRUE	-	-	Microsoft-SQL-Monitor_UDP
+MS-SQL-Server	Tcp	1433	-	TRUE	-	-	Microsoft SQL Server
+MS-SQL-Server_SD	Other	6	-	FALSE	-	-	MSSQL Server service with SmartDefense protection
+MS-SQL-Server_UDP	Udp	1433	-	TRUE	-	-	Microsoft SQL Server
+MS-WINS-Replication-TCP_SD	Other	6	-	FALSE	-	-	MS WINS Replication service with SmartDefense protection
+MS-WINS-Replication-UDP_SD	Other	17	-	FALSE	-	-	MS WINS Replication service with SmartDefense protection
+MSExchange	group	-	-	-	-	MSExchangeDSNSPI	Microsoft Exchange Client-Server over MAPI
+-	-	-	-	-	-	MSExchangeIS	-
+-	-	-	-	-	-	MSExchangeDirRef	-
+MSExchange-2000	group	-	-	-	-	MSExchangeADL	Microsoft Exchange 2000 Extensions
+-	-	-	-	-	-	MSExchangeDirRep	-
+-	-	-	-	-	-	MSExchangeDirRef	-
+MSExchange-RemoteAdmin	group	-	-	-	-	MSExchangeDSXDS	Microsoft Exchange Remote Administration
+-	-	-	-	-	-	MSExchangeSysAtt	-
+-	-	-	-	-	-	MSExchangeSysAttPriv	-
+-	-	-	-	-	-	MSExchangeStoreAdm	-
+MSExchange-SiteConnector	group	-	-	-	-	MSExchangeDSNSPI	Microsoft Exchange MAPI Site Connector
+-	-	-	-	-	-	MSExchangeDSRep	-
+-	-	-	-	-	-	MSExchangeMTA	-
+MSExchangeADL	dcerpc	-	-	-	-	-	Microsoft Exchange 2000 Active Directory Logon
+MSExchangeDSNSPI	dcerpc	-	-	-	-	-	Microsoft Exchange Directory Services (NSPI)
+MSExchangeDSRep	dcerpc	-	-	-	-	-	Microsoft Exchange Directory Replication Services
+MSExchangeDSXDS	dcerpc	-	-	-	-	-	Microsoft Exchange Directory Services XDS
+MSExchangeDatabase	dcerpc	-	-	-	-	-	Microsoft Exchange Database
+MSExchangeDirRef	dcerpc	-	-	-	-	-	Microsoft Exchange 2000 Directory Reference
+MSExchangeDirRep	dcerpc	-	-	-	-	-	Microsoft Exchange 2000 Directory Replication
+MSExchangeIS	dcerpc	-	MSEXCHANGE	-	-	-	Microsoft Exchange Information Store
+MSExchangeInformationStore1	dcerpc	-	-	-	-	-	Microsoft Exchange Information Store 1
+MSExchangeInformationStore2	dcerpc	-	-	-	-	-	Microsoft Exchange Information Store 2
+MSExchangeInformationStore3	dcerpc	-	-	-	-	-	Microsoft Exchange Information Store 3
+MSExchangeMTA	dcerpc	-	-	-	-	-	Microsoft Exchange Message Transfer Agent
+MSExchangeQAdmin	dcerpc	-	-	-	-	-	Microsoft Exchange Que Administration
+MSExchangeSTOREAsyncEMSMDB	dcerpc	-	-	-	-	-	Microsoft Messenger service
+MSExchangeStoreAdm	dcerpc	-	-	-	-	-	Microsoft Exchange Store Administration
+MSExchangeStoreAdmin1	dcerpc	-	-	-	-	-	Microsoft Exchange Store Administration 1
+MSExchangeStoreAdmin3	dcerpc	-	-	-	-	-	Microsoft Exchange Store Administration 3
+MSExchangeSysAtt	dcerpc	-	-	-	-	-	Microsoft Exchange System Attendant
+MSExchangeSysAttPriv	dcerpc	-	-	-	-	-	Microsoft Exchange System Attendant Private
+MSMQ	dcerpc	-	-	-	-	-	Microsoft Message Queue service
+MSNMS	Tcp	1863	MSNMS_PROTOCOL	TRUE	-	-	-
+MSNP	tcp	1863	-	FALSE	-	-	MSN Messenger
+MSN_Messenger	group	-	-	-	-	MSN_Messenger_1863_UDP	MSN Messenger
+-	-	-	-	-	-	MSN_Messenger_5190	-
+-	-	-	-	-	-	MSN_Messenger_File_Transfer	-
+-	-	-	-	-	-	MSN_Messenger_Voice	-
+-	-	-	-	-	-	MSNP	-
+MSN_Messenger_1863_UDP	Udp	1863	-	TRUE	-	-	Microsoft Network Messenger UDP
+MSN_Messenger_5190	Udp	5190	-	TRUE	-	-	Microsoft Network Messenger
+MSN_Messenger_File_Transfer	Tcp	6891-6900	-	TRUE	-	-	Microsoft Network Messenger File Transfer
+MSN_Messenger_Voice	Udp	6901	-	TRUE	-	-	Microsoft Network Messenger Voice communication
+MSSQL_resolver	Udp	1434	SQL_SLAMMER	FALSE	-	-	MS SQL Sapphire /SQL Slammer Worm
+Madster	Tcp	5025	-	TRUE	-	-	Formerly called Aimster
+Marimba_Netcaster	Tcp_subservice	80	-	-	-	-	http subservice for FloodGate use, Marimba Castanet Tuner product
+Messenger_Applications	group	-	-	-	-	AOL_Messenger	-
+-	-	-	-	-	-	MSN_Messenger	-
+-	-	-	-	-	-	Yahoo_Messenger	-
+MetaIP-UAT	udp	5004	-	FALSE	-	-	Check Point Meta IP UAM Client-Server Communication
+Microsoft_Channels	Tcp_subservice	80	-	-	-	-	http subservice for FloodGate use, Microsoft Channels
+Mneah	Tcp	4666	-	TRUE	-	-	Mneah trojan
+Modbus	Tcp	502	-	TRUE	-	-	Modbus is a serial communications protocol that is very popular in connecting industrial electronic devices
+Multidropper	Tcp	1035	-	TRUE	-	-	Multidropper trojan
+MySQL	tcp	3306	-	TRUE	-	-	Supported from version R55W, MySQL database server
+NBT	group	-	-	-	-	nbname	NetBios Services
+-	-	-	-	-	-	nbdatagram	-
+-	-	-	-	-	-	nbsession	-
+NCP	Tcp	524	-	TRUE	-	-	Novell NetWare Core Protocol
+NEW-RADIUS	Udp	1812	-	TRUE	-	-	NEW - Remote Authentication Dial-In User Service
+NEW-RADIUS-ACCOUNTING	Udp	1813	-	TRUE	-	-	NEW - Remote Authentication Dial-In User Service accounting
+NFS	group	-	-	-	-	mountd	Network File System Services
+-	-	-	-	-	-	nfsd	-
+-	-	-	-	-	-	nfsd-tcp	-
+-	-	-	-	-	-	nfsprog	-
+-	-	-	-	-	-	nlockmgr	-
+-	-	-	-	-	-	pcnfsd	-
+NIS	group	-	-	-	-	ypbind	Network Information Services (YP)
+-	-	-	-	-	-	yppasswd	-
+-	-	-	-	-	-	ypserv	-
+-	-	-	-	-	-	ypupdated	-
+-	-	-	-	-	-	ypxfrd	-
+Napster	group	-	-	-	-	Napster_Client_6600-6699	Napster P2P protocol
+-	-	-	-	-	-	Napster_directory_4444	-
+-	-	-	-	-	-	Napster_directory_5555	-
+-	-	-	-	-	-	Napster_directory_6666	-
+-	-	-	-	-	-	Napster_directory_7777	-
+-	-	-	-	-	-	Napster_directory_8888_primary	-
+-	-	-	-	-	-	Napster_redirector	-
+Napster_Client_6600-6699	Tcp	6600-6699	-	FALSE	-	-	Napster clients. Also used by: WinMX
+Napster_directory_4444	Tcp	4444	-	TRUE	-	-	Napster directory connections
+Napster_directory_5555	Tcp	5555	-	TRUE	-	-	Napster directory connections
+Napster_directory_6666	Tcp	6666	-	FALSE	-	-	Napster directory connections
+Napster_directory_7777	Tcp	7777	-	TRUE	-	-	Napster directory connections
+Napster_directory_8888_primary	Tcp	8888	-	TRUE	-	-	Napster directory connections (Primary)
+Napster_redirector	Tcp	8875	-	TRUE	-	-	-
+NetMeeting	group	-	-	-	-	H323	Netmeeting group (H323 & Ldap)
+-	-	-	-	-	-	ldap	-
+NoBackO	Udp	1201	-	TRUE	-	-	NoBackO trojan
+OAS	group	-	-	-	-	OAS-NameServer	Oracle Application Server (IIOP)
+-	-	-	-	-	-	OAS-ORB	-
+OAS-NameServer	tcp	2649	IIOP	TRUE	-	-	Oracle Application Server (IIOP) NameServer
+OAS-ORB	tcp	2651	IIOP	TRUE	-	-	Oracle Application Server (IIOP) ORB
+OPC	Tcp	3480	-	TRUE	-	-	OPC specifies the communication of real-time plant data between control devices from different manufacturers
+OpenWindows	Tcp	2000	-	TRUE	-	-	-
+Orbix	group	-	-	-	-	Orbix-1570	IONA Orbix Daemon (IIOP)
+-	-	-	-	-	-	Orbix-1571	-
+Orbix-1570	tcp	1570	IIOP	TRUE	-	-	IONA Orbix Daemon (IIOP) Port 1570
+Orbix-1571	tcp	1571	IIOP	TRUE	-	-	IONA Orbix Daemon (IIOP) Port 1571
+P2P_File_Sharing_Applications	group	-	-	-	-	Blubster	-
+-	-	-	-	-	-	Direct_Connect	-
+-	-	-	-	-	-	eDonkey	-
+-	-	-	-	-	-	GNUtella	-
+-	-	-	-	-	-	GoToMyPC	-
+-	-	-	-	-	-	Hotline	-
+-	-	-	-	-	-	iMesh	-
+-	-	-	-	-	-	KaZaA	-
+-	-	-	-	-	-	Madster	-
+-	-	-	-	-	-	Napster	-
+-	-	-	-	-	-	WinMX	-
+POP3S	TCP	995	-	FALSE	-	-	SSL protocol over POP3S
+PPTP	group	-	-	-	-	pptp-tcp	Point-to-Point Tunneling group, (pptp & gre)
+-	-	-	-	-	-	gre	-
+Partial-Destination-v6	Other	-1	-	FALSE	-	-	Filter IPv6 destination addresses based on mask and length
+Partial-Source-v6	Other	-1	-	FALSE	-	-	Filter IPv6 source addresses based on mask and length
+Paypin_Outbound_Grp	group	-	-	-	-	http	-
+-	-	-	-	-	-	https	-
+-	-	-	-	-	-	TCP_5288	-
+-	-	-	-	-	-	TCP_5229	-
+-	-	-	-	-	-	TCP_5230	-
+-	-	-	-	-	-	TCP_81	-
+-	-	-	-	-	-	TCP_82	-
+-	-	-	-	-	-	TCP_83	-
+-	-	-	-	-	-	TCP_84	-
+-	-	-	-	-	-	TCP_85	-
+-	-	-	-	-	-	TCP_4505	-
+-	-	-	-	-	-	TCP_15660	-
+-	-	-	-	-	-	TCP_2005	-
+-	-	-	-	-	-	TCP_2010	-
+-	-	-	-	-	-	TCP_2040	-
+-	-	-	-	-	-	TCP_2060	-
+-	-	-	-	-	-	TCP_2552	-
+-	-	-	-	-	-	TCP_3005	-
+-	-	-	-	-	-	TCP_3552	-
+-	-	-	-	-	-	ldap	-
+-	-	-	-	-	-	TCP_31001	-
+-	-	-	-	-	-	TCP_7500	-
+-	-	-	-	-	-	TCP_2195	-
+Pointcast	Tcp_subservice	80	-	-	-	-	http subservice for FloodGate use, push web content
+Port_6667_trojans	Tcp	6667	-	FALSE	-	-	Used by: Dark FTP,EGO,Maniac rootkit,Moses,ScheduleAgent,SubSeven,Trinity,The thing,Kaitex,WinSatan trojans.
+PostgreSQL	tcp	5432	-	TRUE	-	-	Supported from version R55W, PostgreSQL database server
+RADIUS	Udp	1645	-	TRUE	-	-	Remote Authentication Dial-In User Service
+RADIUS-ACCOUNTING	Udp	1646	-	TRUE	-	-	Remote Authentication Dial-In User Service accounting
+RAT	Tcp	1097-1098	-	TRUE	-	-	RAT trojan (Remote Administration Tool)
+RDP	udp	259	-	TRUE	-	-	Check Point VPN-1 FWZ Key Negotiations - Reliable Datagram Protocol
+RIPng	Udp	521	-	TRUE	-	-	Routing Information Protocol for IPv6
+RPCManagement	dcerpc	-	-	-	-	-	RPC Management
+RainWall-Control	group	-	-	-	-	RainWall_Command	RainWall high availability
+-	-	-	-	-	-	RainWall_Daemon	-
+-	-	-	-	-	-	RainWall_Status	-
+RainWall_Command	Tcp	6374	-	TRUE	-	-	RainWall high availability daemon
+RainWall_Daemon	Udp	6372	-	TRUE	-	-	RainWall daemons communication
+RainWall_Status	Udp	6374	-	TRUE	-	-	RainWall remote management status
+RainWall_Stop	Udp	6373	-	TRUE	-	-	RainWall monitoring
+Real-Audio	tcp	7070	PNA	TRUE	-	-	RealNetworks PNA Protocol
+RealPlayer	group	-	-	-	-	Real-Audio	RealNetworks RealPlayer Services
+-	-	-	-	-	-	rtsp	-
+RealSecure	Tcp	2998	-	TRUE	-	-	Automatic 'Suspicious Activity Monitoring' activator
+Remote_Desktop_Protocol	Tcp	3389	-	TRUE	-	-	Microsoft RDP
+Remote_Storm	Tcp	1025	-	TRUE	-	-	Also used by: Fraggle Rock,NetSpy,md5 Backdoor trojans
+RexxRave	Udp	1104	-	TRUE	-	-	RexxRave trojan
+SCCP	tcp	2000	SCCP_TCP	FALSE	-	-	Supported from version R55W, Skinny Client Control Protocol (SCCP)
+SIT	other	41	-	TRUE	-	-	IPv6 encapsulated in IPv4
+SIT_with_Intra_Tunnel_Inspection	Other	41	-	FALSE	-	-	-
+SKIP	other	57	-	TRUE	-	-	IPSEC Simple Key Management for Internet Protocols
+SMTPS	TCP	465	-	FALSE	-	-	SSL protocol over SMTPS
+SUN_ND	Other	77	-	FALSE	-	-	Sun ND protocol
+SWIPE	Other	53	-	FALSE	-	-	swIPe protocol
+SWTP_Gateway	Udp	9281	-	TRUE	-	-	VPN-1 Embedded/SofaWare commands
+SWTP_SMS	Udp	9282	-	TRUE	-	-	VPN-1 embedded / SofaWare Management Server (SMS)
+Shadyshell	Tcp	1337	-	TRUE	-	-	Shadyshell trojan
+Sitara	other	109	-	TRUE	-	-	Sitara Networks Protocol (SpeedSeeker)
+SkyDance-T	Tcp	4000	-	TRUE	-	-	Also used by: Backdoor trojan
+Snmp-Read-Only	other	17	-	FALSE	-	-	Simple Network Management Protocol - Read Only
+SocketsdesTroie	Tcp	1	-	TRUE	-	-	Also used by the: tcpmux service
+Squid_NTLM	TCP	3128	HTTP	FALSE	-	-	Squid NTLM authentication
+StoneBeat	group	-	-	-	-	StoneBeat-Control	Stonesoft StoneBeat
+-	-	-	-	-	-	StoneBeat-Daemon	-
+-	-	-	-	-	-	snmp	-
+StoneBeat-Control	tcp	3002	-	TRUE	-	-	Stonesoft StoneBeat Control
+StoneBeat-Daemon	tcp	3001	-	TRUE	-	-	Stonesoft StoneBeat Daemon Heartbeat
+SubSeven	Tcp	27374	-	TRUE	-	-	Also used by:Bad Blood,EGO,Lion,Ramen,Seeker,The Saint,Tftloader,Webhead trojans
+SubSeven-G	Tcp	1243	-	TRUE	-	-	Also used by: Tiles and Backdoor_g trojans
+T.120	Tcp	1503	-	TRUE	-	-	H323, Application sharing protocol
+TACACS	udp	49	-	TRUE	-	-	Terminal Access Controller Access Control System over UDP
+TACACSplus	tcp	49	-	TRUE	-	-	Terminal Access Controller Access Control System over TCP
+TCP_10000	Tcp	10000	-	TRUE	-	-	-
+TCP_10001	Tcp	10001	-	TRUE	-	-	-
+TCP_10003	Tcp	10003	-	TRUE	-	-	-
+TCP_10004	Tcp	10004	-	TRUE	-	-	-
+TCP_10008	Tcp	10008	-	TRUE	-	-	10008
+TCP_10020	Tcp	10020	-	TRUE	-	-	-
+TCP_10021	Tcp	10021	-	TRUE	-	-	-
+TCP_10022	Tcp	10022	-	TRUE	-	-	-
+TCP_10023	Tcp	10023	-	TRUE	-	-	-
+TCP_10024	Tcp	10024	-	TRUE	-	-	-
+TCP_10025	Tcp	10025	-	TRUE	-	-	-
+TCP_10026	Tcp	10026	-	TRUE	-	-	-
+TCP_10027	Tcp	10027	-	TRUE	-	-	-
+TCP_10028	Tcp	10028	-	TRUE	-	-	-
+TCP_10029	Tcp	10029	-	TRUE	-	-	-
+TCP_10030	Tcp	10030	-	TRUE	-	-	-
+TCP_10031	Tcp	10031	-	TRUE	-	-	-
+TCP_10032	Tcp	10032	-	TRUE	-	-	-
+TCP_10033	Tcp	10033	-	TRUE	-	-	-
+TCP_10034	Tcp	10034	-	TRUE	-	-	-
+TCP_10035	Tcp	10035	-	TRUE	-	-	-
+TCP_10036	Tcp	10036	-	TRUE	-	-	-
+TCP_10037	Tcp	10037	-	TRUE	-	-	-
+TCP_10038	Tcp	10038	-	TRUE	-	-	-
+TCP_10039	Tcp	10039	-	TRUE	-	-	-
+TCP_10040	Tcp	10040	-	TRUE	-	-	-
+TCP_10042	Tcp	10042	-	TRUE	-	-	-
+TCP_10043	Tcp	10043	-	TRUE	-	-	-
+TCP_10050	Tcp	10050	-	TRUE	-	-	-
+TCP_10051	Tcp	10051	-	TRUE	-	-	-
+TCP_10052	Tcp	10052	-	TRUE	-	-	-
+TCP_10070	Tcp	10070	-	TRUE	-	-	-
+TCP_10088	Tcp	10088	-	TRUE	-	-	-
+TCP_10089	Tcp	10089	-	TRUE	-	-	-
+TCP_10100	Tcp	10100	-	TRUE	-	-	-
+TCP_10109	Tcp	10109	-	TRUE	-	-	-
+TCP_10110	Tcp	10110	-	TRUE	-	-	-
+TCP_10111	Tcp	10111	-	TRUE	-	-	-
+TCP_10200	Tcp	10200	-	TRUE	-	-	-
+TCP_1024_65535	Tcp	1024-65535	-	TRUE	-	-	-
+TCP_10301	Tcp	10301	-	TRUE	-	-	-
+TCP_10444	Tcp	10444	-	TRUE	-	-	-
+TCP_10500	Tcp	10500	-	TRUE	-	-	-
+TCP_1055	Tcp	1055	-	TRUE	-	-	-
+TCP_10565_10566	Tcp	10565-10566	-	TRUE	-	-	-
+TCP_10566	Tcp	10566	-	TRUE	-	-	-
+TCP_10730	Tcp	10730	-	TRUE	-	-	-
+TCP_11000	Tcp	11000	-	TRUE	-	-	-
+TCP_11000-16000	Tcp	11000-16000	-	TRUE	-	-	-
+TCP_11001	Tcp	11001	-	TRUE	-	-	-
+TCP_11002	Tcp	11002	-	TRUE	-	-	-
+TCP_11003	Tcp	11003	-	TRUE	-	-	-
+TCP_11024	Tcp	11024	-	TRUE	-	-	-
+TCP_11025	Tcp	11025	-	TRUE	-	-	-
+TCP_11031	Tcp	11031	-	TRUE	-	-	-
+TCP_11039	Tcp	11039	-	TRUE	-	-	-
+TCP_11100	Tcp	11100	-	TRUE	-	-	-
+TCP_11131	Tcp	11131	-	TRUE	-	-	-
+TCP_11133	Tcp	11133	-	TRUE	-	-	-
+TCP_11134	Tcp	11134	-	TRUE	-	-	-
+TCP_11200	Tcp	11200	-	TRUE	-	-	-
+TCP_11211	Tcp	11211	-	TRUE	-	-	-
+TCP_11212	Tcp	11212	-	TRUE	-	-	-
+TCP_11213	Tcp	11213	-	TRUE	-	-	-
+TCP_11500	Tcp	11500	-	TRUE	-	-	-
+TCP_11889	Tcp	11889	-	TRUE	-	-	-
+TCP_12300	Tcp	12300	-	TRUE	-	-	-
+TCP_12301	Tcp	12301	-	TRUE	-	-	-
+TCP_12302	Tcp	12302	-	TRUE	-	-	-
+TCP_12303	Tcp	12303	-	TRUE	-	-	-
+TCP_1234	Tcp	1234	-	TRUE	-	-	-
+TCP_12381	Tcp	12381	-	TRUE	-	-	-
+TCP_1278	Tcp	1278	-	TRUE	-	-	-
+TCP_1279	Tcp	1279	-	TRUE	-	-	-
+TCP_12889	Tcp	12889	-	TRUE	-	-	-
+TCP_12906	Tcp	12906	-	TRUE	-	-	-
+TCP_13003	Tcp	13003	-	TRUE	-	-	-
+TCP_1301	Tcp	1301	-	TRUE	-	-	-
+TCP_13131	Tcp	13131	-	TRUE	-	-	-
+TCP_1314	Tcp	1314	-	TRUE	-	-	-
+TCP_13243	Tcp	13243	-	TRUE	-	-	-
+TCP_135	Tcp	135	-	TRUE	-	-	-
+TCP_1364	Tcp	1364	-	TRUE	-	-	-
+TCP_137	Tcp	137	-	TRUE	-	-	-
+TCP_138	Tcp	138	-	TRUE	-	-	-
+TCP_13889	Tcp	13889	-	TRUE	-	-	13889
+TCP_14000	Tcp	14000	-	TRUE	-	-	-
+TCP_1414	Tcp	1414	-	TRUE	-	-	-
+TCP_1443	Tcp	1443	-	TRUE	-	-	-
+TCP_15000	Tcp	15000	-	TRUE	-	-	-
+TCP_1515	Tcp	1515	-	TRUE	-	-	-
+TCP_1522	Tcp	1522	-	TRUE	-	-	-
+TCP_1523	Tcp	1523	-	TRUE	-	-	-
+TCP_1527	Tcp	1527	-	TRUE	-	-	-
+TCP_15600	Tcp	15600	-	TRUE	-	-	-
+TCP_15660	Tcp	15660	-	TRUE	-	-	-
+TCP_15672	Tcp	15672	-	TRUE	-	-	-
+TCP_15800	Tcp	15800	-	TRUE	-	-	-
+TCP_15880	Tcp	15880	-	TRUE	-	-	-
+TCP_15988	Tcp	15988	-	TRUE	-	-	-
+TCP_15989	Tcp	15989	-	TRUE	-	-	-
+TCP_161	Tcp	161	-	TRUE	-	-	-
+TCP_1648	Tcp	1648	-	TRUE	-	-	-
+TCP_1688	Tcp	1688	-	TRUE	-	-	-
+TCP_1700	Tcp	1700	-	TRUE	-	-	-
+TCP_1700_600s	Tcp	1700	-	TRUE	-	-	-
+TCP_1700_60s	Tcp	1700	-	TRUE	-	-	-
+TCP_1700_86400s	Tcp	1700	-	TRUE	-	-	-
+TCP_17037	Tcp	17037	-	TRUE	-	-	-
+TCP_17090	Tcp	17090	-	TRUE	-	-	-
+TCP_17205	Tcp	17205	-	TRUE	-	-	-
+TCP_17660	Tcp	17660	-	TRUE	-	-	-
+TCP_17663	Tcp	17663	-	TRUE	-	-	-
+TCP_17777	Tcp	17777	-	TRUE	-	-	-
+TCP_1800	Tcp	1800	-	TRUE	-	-	-
+TCP_18060	Tcp	18060	-	TRUE	-	-	-
+TCP_18066	Tcp	18066	-	TRUE	-	-	-
+TCP_18080	Tcp	18080	-	TRUE	-	-	-
+TCP_1812	Tcp	1812	-	TRUE	-	-	-
+TCP_18120	Tcp	18120	-	TRUE	-	-	-
+TCP_18121	Tcp	18121	-	TRUE	-	-	-
+TCP_18888	Tcp	18888	-	TRUE	-	-	-
+TCP_19000	Tcp	19000	-	TRUE	-	-	-
+TCP_19001	Tcp	19001	-	TRUE	-	-	-
+TCP_19002	Tcp	19002	-	TRUE	-	-	-
+TCP_19003	Tcp	19003	-	TRUE	-	-	-
+TCP_19004	Tcp	19004	-	TRUE	-	-	-
+TCP_19005	Tcp	19005	-	TRUE	-	-	-
+TCP_19006	Tcp	19006	-	TRUE	-	-	-
+TCP_19007	Tcp	19007	-	TRUE	-	-	-
+TCP_19008	Tcp	19008	-	TRUE	-	-	-
+TCP_19009	Tcp	19009	-	TRUE	-	-	-
+TCP_19010	Tcp	19010	-	TRUE	-	-	-
+TCP_19635	Tcp	19635	-	TRUE	-	-	-
+TCP_19908	Tcp	19908	-	TRUE	-	-	-
+TCP_19920	Tcp	19920	-	TRUE	-	-	-
+TCP_19921	Tcp	19921	-	TRUE	-	-	-
+TCP_20	Tcp	20	-	TRUE	-	-	-
+TCP_20002	Tcp	20002	-	TRUE	-	-	-
+TCP_2002	Tcp	2002	-	TRUE	-	-	-
+TCP_20046	Tcp	20046	-	TRUE	-	-	-
+TCP_2005	Tcp	2005	-	TRUE	-	-	-
+TCP_2010	Tcp	2010	-	TRUE	-	-	-
+TCP_20189	Tcp	20189	-	TRUE	-	-	-
+TCP_20190	Tcp	20190	-	TRUE	-	-	-
+TCP_2020	Tcp	2020	-	TRUE	-	-	-
+TCP_2022	Tcp	2022	-	TRUE	-	-	-
+TCP_20290	Tcp	20290	-	TRUE	-	-	-
+TCP_2030	Tcp	2030	-	TRUE	-	-	-
+TCP_20300	Tcp	20300	-	TRUE	-	-	-
+TCP_2040	Tcp	2040	-	TRUE	-	-	-
+TCP_2042	Tcp	2042	-	TRUE	-	-	-
+TCP_20443	Tcp	20443	-	TRUE	-	-	-
+TCP_20480	Tcp	20480	-	TRUE	-	-	-
+TCP_20481	Tcp	20481	-	TRUE	-	-	-
+TCP_20482	Tcp	20482	-	TRUE	-	-	-
+TCP_20483	Tcp	20483	-	TRUE	-	-	-
+TCP_2051	Tcp	2051	-	TRUE	-	-	-
+TCP_20590	Tcp	20590	-	TRUE	-	-	-
+TCP_2060	Tcp	2060	-	TRUE	-	-	-
+TCP_20620	Tcp	20620	-	TRUE	-	-	-
+TCP_20720	Tcp	20720	-	TRUE	-	-	-
+TCP_20721	Tcp	20721	-	TRUE	-	-	-
+TCP_20820	Tcp	20820	-	TRUE	-	-	-
+TCP_20821	Tcp	20821	-	TRUE	-	-	-
+TCP_20860	Tcp	20860	-	TRUE	-	-	-
+TCP_20861	Tcp	20861	-	TRUE	-	-	-
+TCP_20950	Tcp	20950	-	TRUE	-	-	-
+TCP_20970	Tcp	20970	-	TRUE	-	-	-
+TCP_20971	Tcp	20971	-	TRUE	-	-	-
+TCP_21008	Tcp	21008	-	TRUE	-	-	-
+TCP_21043	Tcp	21043	-	TRUE	-	-	-
+TCP_21130	Tcp	21130	-	TRUE	-	-	-
+TCP_2144	Tcp	2144	-	TRUE	-	-	-
+TCP_2162	Tcp	2162	-	TRUE	-	-	-
+TCP_2163	Tcp	2163	-	TRUE	-	-	-
+TCP_21801	Tcp	21801	-	TRUE	-	-	-
+TCP_2181	Tcp	2181	-	TRUE	-	-	-
+TCP_2186	Tcp	2186	-	TRUE	-	-	-
+TCP_21901	Tcp	21901	-	TRUE	-	-	-
+TCP_21902	Tcp	21902	-	TRUE	-	-	-
+TCP_2191	Tcp	2191	-	TRUE	-	-	-
+TCP_2195	Tcp	2195	-	TRUE	-	-	-
+TCP_22049	Tcp	22049	-	TRUE	-	-	-
+TCP_22053	Tcp	22053	-	TRUE	-	-	-
+TCP_22058	Tcp	22058	-	TRUE	-	-	-
+TCP_2221	Tcp	2221	-	TRUE	-	-	-
+TCP_22805	Tcp	22805	-	TRUE	-	-	-
+TCP_2301	Tcp	2301	-	TRUE	-	-	-
+TCP_2381	Tcp	2381	-	TRUE	-	-	-
+TCP_2382	Tcp	2382	-	TRUE	-	-	-
+TCP_2383	Tcp	2383	-	TRUE	-	-	-
+TCP_2443	Tcp	2443	-	TRUE	-	-	-
+TCP_2500	Tcp	2500	-	TRUE	-	-	-
+TCP_25000	Tcp	25000	-	TRUE	-	-	-
+TCP_25001_26999	Tcp	25001-26999	-	TRUE	-	-	-
+TCP_25001_26999_86400	Tcp	25001-26999	-	TRUE	-	-	-
+TCP_25010	Tcp	25010	-	TRUE	-	-	-
+TCP_25020	Tcp	25020	-	TRUE	-	-	-
+TCP_25110	Tcp	25110	-	TRUE	-	-	-
+TCP_25120	Tcp	25120	-	TRUE	-	-	-
+TCP_25130	Tcp	25130	-	TRUE	-	-	-
+TCP_25131	Tcp	25131	-	TRUE	-	-	-
+TCP_25140	Tcp	25140	-	TRUE	-	-	-
+TCP_25141	Tcp	25141	-	TRUE	-	-	-
+TCP_25150	Tcp	25150	-	TRUE	-	-	-
+TCP_25160	Tcp	25160	-	TRUE	-	-	-
+TCP_25161	Tcp	25161	-	TRUE	-	-	-
+TCP_25250	Tcp	25250	-	TRUE	-	-	-
+TCP_25475	Tcp	25475	-	TRUE	-	-	-
+TCP_2552	Tcp	2552	-	TRUE	-	-	-
+TCP_25901	Tcp	25901	-	TRUE	-	-	-
+TCP_25902	Tcp	25902	-	TRUE	-	-	-
+TCP_25903	Tcp	25903	-	TRUE	-	-	-
+TCP_2598	Tcp	2598	-	TRUE	-	-	-
+TCP_26000	Tcp	26000	-	TRUE	-	-	-
+TCP_26001	Tcp	26001	-	TRUE	-	-	-
+TCP_26002	Tcp	26002	-	TRUE	-	-	-
+TCP_26005	Tcp	26005	-	TRUE	-	-	-
+TCP_2606	Tcp	2606	-	TRUE	-	-	-
+TCP_2607	Tcp	2607	-	TRUE	-	-	-
+TCP_26160	Tcp	26160	-	TRUE	-	-	-
+TCP_26161	Tcp	26161	-	TRUE	-	-	-
+TCP_2638	Tcp	2638	-	TRUE	-	-	-
+TCP_26475	Tcp	26475	-	TRUE	-	-	-
+TCP_26542	Tcp	26542	-	TRUE	-	-	-
+TCP_27000	Tcp	27000	-	TRUE	-	-	-
+TCP_27017	Tcp	27017	-	TRUE	-	-	-
+TCP_27018	Tcp	27018	-	TRUE	-	-	-
+TCP_27019	Tcp	27019	-	TRUE	-	-	-
+TCP_27020	Tcp	27020	-	TRUE	-	-	-
+TCP_27475	Tcp	27475	-	TRUE	-	-	-
+TCP_280	Tcp	280	-	TRUE	-	-	-
+TCP_28001	Tcp	28001	-	TRUE	-	-	-
+TCP_28017	Tcp	28017	-	TRUE	-	-	-
+TCP_2804	Tcp	2804	-	TRUE	-	-	-
+TCP_28383	Tcp	28383	-	TRUE	-	-	-
+TCP_28475	Tcp	28475	-	TRUE	-	-	-
+TCP_29000	Tcp	29000	-	TRUE	-	-	-
+TCP_2915	Tcp	2915	-	TRUE	-	-	-
+TCP_29418	Tcp	29418	-	TRUE	-	-	-
+TCP_29910	Tcp	29910	-	TRUE	-	-	-
+TCP_30000	Tcp	30000	-	TRUE	-	-	-
+TCP_3000_3030	Tcp	3000-3030	-	TRUE	-	-	-
+TCP_3001	Tcp	3001	-	TRUE	-	-	-
+TCP_30047	Tcp	30047	-	TRUE	-	-	-
+TCP_3005	Tcp	3005	-	TRUE	-	-	-
+TCP_30100	Tcp	30100	-	TRUE	-	-	-
+TCP_30200	Tcp	30200	-	TRUE	-	-	-
+TCP_30300	Tcp	30300	-	TRUE	-	-	-
+TCP_30400	Tcp	30400	-	TRUE	-	-	-
+TCP_30500	Tcp	30500	-	TRUE	-	-	-
+TCP_30600	Tcp	30600	-	TRUE	-	-	-
+TCP_30700	Tcp	30700	-	TRUE	-	-	-
+TCP_30720	Tcp	30720	-	TRUE	-	-	-
+TCP_30721	Tcp	30721	-	TRUE	-	-	-
+TCP_3080	Tcp	3080	-	TRUE	-	-	-
+TCP_30800	Tcp	30800	-	TRUE	-	-	-
+TCP_30900	Tcp	30900	-	TRUE	-	-	-
+TCP_31000	Tcp	31000	-	TRUE	-	-	-
+TCP_31001	Tcp	31001	-	TRUE	-	-	-
+TCP_31008	Tcp	31008	-	TRUE	-	-	-
+TCP_31043	Tcp	31043	-	TRUE	-	-	-
+TCP_31100	Tcp	31100	-	TRUE	-	-	-
+TCP_31132	Tcp	31132	-	TRUE	-	-	-
+TCP_31133	Tcp	31133	-	TRUE	-	-	-
+TCP_31200	Tcp	31200	-	TRUE	-	-	-
+TCP_31300	Tcp	31300	-	TRUE	-	-	-
+TCP_31400	Tcp	31400	-	TRUE	-	-	-
+TCP_31414	Tcp	31414	-	TRUE	-	-	-
+TCP_31500	Tcp	31500	-	TRUE	-	-	-
+TCP_31503	Tcp	31503	-	TRUE	-	-	-
+TCP_31504	Tcp	31504	-	TRUE	-	-	-
+TCP_31505	Tcp	31505	-	TRUE	-	-	-
+TCP_31506	Tcp	31506	-	TRUE	-	-	-
+TCP_31600	Tcp	31600	-	TRUE	-	-	-
+TCP_31700	Tcp	31700	-	TRUE	-	-	-
+TCP_31800	Tcp	31800	-	TRUE	-	-	-
+TCP_31900	Tcp	31900	-	TRUE	-	-	-
+TCP_31901	Tcp	31901	-	TRUE	-	-	-
+TCP_3192	Tcp	3192	-	TRUE	-	-	-
+TCP_3193	Tcp	3193	-	TRUE	-	-	-
+TCP_32345	Tcp	32345	-	TRUE	-	-	-
+TCP_32346	Tcp	32346	-	TRUE	-	-	-
+TCP_3268	Tcp	3268	-	TRUE	-	-	-
+TCP_3269	Tcp	3269	-	TRUE	-	-	-
+TCP_3301	Tcp	3301	-	TRUE	-	-	-
+TCP_3306_60s	Tcp	3306	-	TRUE	-	-	-
+TCP_3316	Tcp	3316	-	TRUE	-	-	-
+TCP_3317	Tcp	3317	-	TRUE	-	-	-
+TCP_3318	Tcp	3318	-	TRUE	-	-	-
+TCP_3319	Tcp	3319	-	TRUE	-	-	-
+TCP_34000	Tcp	34000	-	TRUE	-	-	-
+TCP_34049	Tcp	34049	-	TRUE	-	-	-
+TCP_34335	Tcp	34335	-	TRUE	-	-	-
+TCP_3443	Tcp	3443	-	TRUE	-	-	-
+TCP_34567	Tcp	34567	-	TRUE	-	-	-
+TCP_34952	Tcp	34952	-	TRUE	-	-	-
+TCP_3552	Tcp	3552	-	TRUE	-	-	-
+TCP_35567	Tcp	35567	-	TRUE	-	-	-
+TCP_36007	Tcp	36007	-	TRUE	-	-	-
+TCP_36008	Tcp	36008	-	TRUE	-	-	-
+TCP_36009	Tcp	36009	-	TRUE	-	-	-
+TCP_3700	Tcp	3700	-	TRUE	-	-	-
+TCP_3701	Tcp	3701	-	TRUE	-	-	-
+TCP_3702	Tcp	3702	-	TRUE	-	-	-
+TCP_3703	Tcp	3703	-	TRUE	-	-	-
+TCP_3704	Tcp	3704	-	TRUE	-	-	-
+TCP_3705	Tcp	3705	-	TRUE	-	-	-
+TCP_3706	Tcp	3706	-	TRUE	-	-	-
+TCP_3707	Tcp	3707	-	TRUE	-	-	-
+TCP_3708	Tcp	3708	-	TRUE	-	-	-
+TCP_3709	Tcp	3709	-	TRUE	-	-	-
+TCP_3710	Tcp	3710	-	TRUE	-	-	-
+TCP_3711	Tcp	3711	-	TRUE	-	-	-
+TCP_3712	Tcp	3712	-	TRUE	-	-	-
+TCP_3713	Tcp	3713	-	TRUE	-	-	-
+TCP_3714	Tcp	3714	-	TRUE	-	-	-
+TCP_3715	Tcp	3715	-	TRUE	-	-	-
+TCP_3851	Tcp	3851	-	TRUE	-	-	-
+TCP_3872	Tcp	3872	-	TRUE	-	-	-
+TCP_39992	Tcp	39992	-	TRUE	-	-	-
+TCP_4000	Tcp	4000	-	TRUE	-	-	-
+TCP_40000	Tcp	40000	-	TRUE	-	-	-
+TCP_40000_65535	Tcp	40000-65535	-	TRUE	-	-	-
+TCP_4040	Tcp	4040	-	TRUE	-	-	-
+TCP_40814	Tcp	40814	-	TRUE	-	-	-
+TCP_41044	Tcp	41044	-	TRUE	-	-	-
+TCP_42	Tcp	42	-	TRUE	-	-	-
+TCP_42000	Tcp	42000	-	TRUE	-	-	-
+TCP_42044	Tcp	42044	-	TRUE	-	-	-
+TCP_427	Tcp	427	-	TRUE	-	-	-
+TCP_433	Tcp	433	-	TRUE	-	-	-
+TCP_43587	Tcp	43587	-	TRUE	-	-	-
+TCP_43588	Tcp	43588	-	TRUE	-	-	-
+TCP_44335	Tcp	44335	-	TRUE	-	-	-
+TCP_4449	Tcp	4449	-	TRUE	-	-	-
+TCP_445	Tcp	445	-	TRUE	-	-	-
+TCP_446	Tcp	446	-	TRUE	-	-	-
+TCP_4505	Tcp	4505	-	TRUE	-	-	-
+TCP_4567	Tcp	4567	-	TRUE	-	-	-
+TCP_464	Tcp	464	-	TRUE	-	-	-
+TCP_48300	Tcp	48300	-	TRUE	-	-	-
+TCP_48860	Tcp	48860	-	TRUE	-	-	-
+TCP_4889	Tcp	4889	-	TRUE	-	-	-
+TCP_49000-49200	Tcp	49000-49200	-	TRUE	-	-	-
+TCP_4903	Tcp	4903	-	TRUE	-	-	-
+TCP_49152-65535	Tcp	49152-65535	-	TRUE	-	-	-
+TCP_50000	Tcp	50000	-	TRUE	-	-	-
+TCP_50001	Tcp	50001	-	TRUE	-	-	-
+TCP_50002	Tcp	50002	-	TRUE	-	-	-
+TCP_50003	Tcp	50003	-	TRUE	-	-	-
+TCP_50004	Tcp	50004	-	TRUE	-	-	-
+TCP_5001	Tcp	5001	-	TRUE	-	-	-
+TCP_50010	Tcp	50010	-	TRUE	-	-	-
+TCP_50020	Tcp	50020	-	TRUE	-	-	-
+TCP_5003	Tcp	5003	-	TRUE	-	-	-
+TCP_50030	Tcp	50030	-	TRUE	-	-	-
+TCP_50040	Tcp	50040	-	TRUE	-	-	-
+TCP_50060	Tcp	50060	-	TRUE	-	-	-
+TCP_50070	Tcp	50070	-	TRUE	-	-	-
+TCP_50075	Tcp	50075	-	TRUE	-	-	-
+TCP_50587	Tcp	50587	-	TRUE	-	-	-
+TCP_5070	Tcp	5070	-	TRUE	-	-	-
+TCP_51000	Tcp	51000	-	TRUE	-	-	-
+TCP_51001	Tcp	51001	-	TRUE	-	-	-
+TCP_51120	Tcp	51120	-	TRUE	-	-	-
+TCP_514	Tcp	514	-	TRUE	-	-	-
+TCP_52009	Tcp	52009	-	TRUE	-	-	-
+TCP_52145	Tcp	52145	-	TRUE	-	-	-
+TCP_5229	Tcp	5229	-	TRUE	-	-	-
+TCP_5230	Tcp	5230	-	TRUE	-	-	-
+TCP_5288	Tcp	5288	-	TRUE	-	-	-
+TCP_54345	Tcp	54345	-	TRUE	-	-	-
+TCP_5465	Tcp	5465	-	TRUE	-	-	-
+TCP_55001	Tcp	55001	-	TRUE	-	-	-
+TCP_5505	Tcp	5505	-	TRUE	-	-	-
+TCP_5555	Tcp	5555	-	TRUE	-	-	-
+TCP_5556	Tcp	5556	-	TRUE	-	-	-
+TCP_5591	Tcp	5591	-	TRUE	-	-	-
+TCP_5592	Tcp	5592	-	TRUE	-	-	-
+TCP_5672	Tcp	5672	-	TRUE	-	-	-
+TCP_5696	Tcp	5696	-	TRUE	-	-	-
+TCP_57169	Tcp	57169	-	TRUE	-	-	-
+TCP_5722	Tcp	5722	-	TRUE	-	-	-
+TCP_5781	Tcp	5781	-	TRUE	-	-	-
+TCP_5782	Tcp	5782	-	TRUE	-	-	-
+TCP_5783	Tcp	5783	-	TRUE	-	-	-
+TCP_5901	Tcp	5901	-	TRUE	-	-	-
+TCP_5981	Tcp	5981	-	TRUE	-	-	-
+TCP_5988	Tcp	5988	-	TRUE	-	-	-
+TCP_5989	Tcp	5989	-	TRUE	-	-	-
+TCP_60010	Tcp	60010	-	TRUE	-	-	-
+TCP_60020	Tcp	60020	-	TRUE	-	-	-
+TCP_60030	Tcp	60030	-	TRUE	-	-	-
+TCP_6004-6305	Tcp	6004-6305	-	TRUE	-	-	-
+TCP_6005	Tcp	6005	-	TRUE	-	-	-
+TCP_6063	Tcp	6063	-	TRUE	-	-	-
+TCP_6110	Tcp	6110	-	TRUE	-	-	-
+TCP_6114	Tcp	6114	-	TRUE	-	-	-
+TCP_6119	Tcp	6119	-	TRUE	-	-	-
+TCP_6124	Tcp	6124	-	TRUE	-	-	-
+TCP_6134	Tcp	6134	-	TRUE	-	-	-
+TCP_6144	Tcp	6144	-	TRUE	-	-	-
+TCP_6154	Tcp	6154	-	TRUE	-	-	-
+TCP_61610	Tcp	61610	-	TRUE	-	-	-
+TCP_61616	Tcp	61616	-	TRUE	-	-	-
+TCP_6164	Tcp	6164	-	TRUE	-	-	-
+TCP_6174	Tcp	6174	-	TRUE	-	-	-
+TCP_6184	Tcp	6184	-	TRUE	-	-	-
+TCP_6194	Tcp	6194	-	TRUE	-	-	-
+TCP_6200	Tcp	6200	-	TRUE	-	-	-
+TCP_62000	Tcp	62000	-	TRUE	-	-	-
+TCP_6210	Tcp	6210	-	TRUE	-	-	-
+TCP_6214	Tcp	6214	-	TRUE	-	-	-
+TCP_6224	Tcp	6224	-	TRUE	-	-	-
+TCP_6234	Tcp	6234	-	TRUE	-	-	-
+TCP_6244	Tcp	6244	-	TRUE	-	-	-
+TCP_6254	Tcp	6254	-	TRUE	-	-	-
+TCP_62610	Tcp	62610	-	TRUE	-	-	-
+TCP_6264	Tcp	6264	-	TRUE	-	-	-
+TCP_6274	Tcp	6274	-	TRUE	-	-	-
+TCP_6284	Tcp	6284	-	TRUE	-	-	-
+TCP_6294	Tcp	6294	-	TRUE	-	-	-
+TCP_6304	Tcp	6304	-	TRUE	-	-	-
+TCP_6314	Tcp	6314	-	TRUE	-	-	-
+TCP_6324	Tcp	6324	-	TRUE	-	-	-
+TCP_6354	Tcp	6354	-	TRUE	-	-	-
+TCP_6364	Tcp	6364	-	TRUE	-	-	-
+TCP_6374	Tcp	6374	-	TRUE	-	-	-
+TCP_6379	Tcp	6379	-	TRUE	-	-	-
+TCP_6380	Tcp	6380	-	TRUE	-	-	-
+TCP_6384	Tcp	6384	-	TRUE	-	-	-
+TCP_6394	Tcp	6394	-	TRUE	-	-	-
+TCP_64000	Tcp	64000	-	TRUE	-	-	-
+TCP_6404	Tcp	6404	-	TRUE	-	-	-
+TCP_6414	Tcp	6414	-	TRUE	-	-	-
+TCP_6424	Tcp	6424	-	TRUE	-	-	-
+TCP_6434	Tcp	6434	-	TRUE	-	-	-
+TCP_6444	Tcp	6444	-	TRUE	-	-	-
+TCP_6454	Tcp	6454	-	TRUE	-	-	-
+TCP_6475	Tcp	6475	-	TRUE	-	-	-
+TCP_6481	Tcp	6481	-	TRUE	-	-	-
+TCP_6700_6710	Tcp	6700-6710	-	TRUE	-	-	-
+TCP_6701	Tcp	6701	-	TRUE	-	-	-
+TCP_6703	Tcp	6703	-	TRUE	-	-	-
+TCP_6704	Tcp	6704	-	TRUE	-	-	-
+TCP_6775	Tcp	6775	-	TRUE	-	-	-
+TCP_686	Tcp	686	-	TRUE	-	-	-
+TCP_6988	Tcp	6988	-	TRUE	-	-	-
+TCP_6989	Tcp	6989	-	TRUE	-	-	-
+TCP_7000_7048	Tcp	7000-7048	-	TRUE	-	-	-
+TCP_7000_9000	Tcp	7000-9000	-	TRUE	-	-	-
+TCP_7020	Tcp	7020	-	TRUE	-	-	-
+TCP_7030	Tcp	7030	-	TRUE	-	-	-
+TCP_7040	Tcp	7040	-	TRUE	-	-	-
+TCP_7041	Tcp	7041	-	TRUE	-	-	-
+TCP_7042	Tcp	7042	-	TRUE	-	-	-
+TCP_7043	Tcp	7043	-	TRUE	-	-	-
+TCP_7044	Tcp	7044	-	TRUE	-	-	-
+TCP_7045	Tcp	7045	-	TRUE	-	-	-
+TCP_7050	Tcp	7050	-	TRUE	-	-	-
+TCP_7077	Tcp	7077	-	TRUE	-	-	-
+TCP_7080	Tcp	7080	-	TRUE	-	-	-
+TCP_7102	Tcp	7102	-	TRUE	-	-	-
+TCP_7131	Tcp	7131	-	TRUE	-	-	-
+TCP_7140	Tcp	7140	-	TRUE	-	-	-
+TCP_7180	Tcp	7180	-	TRUE	-	-	-
+TCP_7243	Tcp	7243	-	TRUE	-	-	-
+TCP_7305	Tcp	7305	-	TRUE	-	-	-
+TCP_7379	Tcp	7379	-	TRUE	-	-	-
+TCP_743	Tcp	743	-	TRUE	-	-	-
+TCP_7443	Tcp	7443	-	TRUE	-	-	-
+TCP_7475	Tcp	7475	-	TRUE	-	-	-
+TCP_7500	Tcp	7500	-	TRUE	-	-	-
+TCP_754	Tcp	754	-	TRUE	-	-	-
+TCP_7555	Tcp	7555	-	TRUE	-	-	-
+TCP_7750	Tcp	7750	-	TRUE	-	-	-
+TCP_7769	Tcp	7769	-	TRUE	-	-	-
+TCP_7775	Tcp	7775	-	TRUE	-	-	-
+TCP_7778	Tcp	7778	-	TRUE	-	-	-
+TCP_7779	Tcp	7779	-	TRUE	-	-	-
+TCP_7788	Tcp	7788	-	TRUE	-	-	-
+TCP_7799	Tcp	7799	-	TRUE	-	-	-
+TCP_7809	Tcp	7809	-	TRUE	-	-	-
+TCP_7810	Tcp	7810	-	TRUE	-	-	-
+TCP_7811	Tcp	7811	-	TRUE	-	-	-
+TCP_7812	Tcp	7812	-	TRUE	-	-	-
+TCP_7813	Tcp	7813	-	TRUE	-	-	-
+TCP_7814	Tcp	7814	-	TRUE	-	-	-
+TCP_7815	Tcp	7815	-	TRUE	-	-	-
+TCP_7816	Tcp	7816	-	TRUE	-	-	-
+TCP_7817	Tcp	7817	-	TRUE	-	-	-
+TCP_7818	Tcp	7818	-	TRUE	-	-	-
+TCP_7880	Tcp	7880	-	TRUE	-	-	-
+TCP_7900	Tcp	7900	-	TRUE	-	-	-
+TCP_7900-7930	Tcp	7900-7930	-	TRUE	-	-	-
+TCP_7900-7950	Tcp	7900-7950	-	TRUE	-	-	-
+TCP_7901	Tcp	7901	-	TRUE	-	-	-
+TCP_7903	Tcp	7903	-	TRUE	-	-	-
+TCP_7904	Tcp	7904	-	TRUE	-	-	-
+TCP_7909	Tcp	7909	-	TRUE	-	-	-
+TCP_7921	Tcp	7921	-	TRUE	-	-	-
+TCP_7922	Tcp	7922	-	TRUE	-	-	-
+TCP_7923	Tcp	7923	-	TRUE	-	-	-
+TCP_7931	Tcp	7931	-	TRUE	-	-	-
+TCP_7932	Tcp	7932	-	TRUE	-	-	-
+TCP_7933	Tcp	7933	-	TRUE	-	-	-
+TCP_7934	Tcp	7934	-	TRUE	-	-	-
+TCP_7935	Tcp	7935	-	TRUE	-	-	-
+TCP_7990	Tcp	7990	-	TRUE	-	-	-
+TCP_7999	Tcp	7999	-	TRUE	-	-	-
+TCP_8000	Tcp	8000	-	TRUE	-	-	-
+TCP_8001	Tcp	8001	-	TRUE	-	-	-
+TCP_8002	Tcp	8002	-	TRUE	-	-	-
+TCP_8006	Tcp	8006	-	TRUE	-	-	-
+TCP_8008	Tcp	8008	-	TRUE	-	-	-
+TCP_8010	Tcp	8010	-	TRUE	-	-	-
+TCP_8011	Tcp	8011	-	TRUE	-	-	-
+TCP_8014	Tcp	8014	-	TRUE	-	-	-
+TCP_8017	Tcp	8017	-	TRUE	-	-	-
+TCP_8018	Tcp	8018	-	TRUE	-	-	-
+TCP_8019	Tcp	8019	-	TRUE	-	-	-
+TCP_8020	Tcp	8020	-	TRUE	-	-	-
+TCP_8029	Tcp	8029	-	TRUE	-	-	-
+TCP_8032	Tcp	8032	-	TRUE	-	-	-
+TCP_8039	Tcp	8039	-	TRUE	-	-	-
+TCP_8042	Tcp	8042	-	TRUE	-	-	-
+TCP_8049	Tcp	8049	-	TRUE	-	-	-
+TCP_8059	Tcp	8059	-	TRUE	-	-	-
+TCP_8066	Tcp	8066	-	TRUE	-	-	-
+TCP_8069	Tcp	8069	-	TRUE	-	-	-
+TCP_8079	Tcp	8079	-	TRUE	-	-	-
+TCP_8081	Tcp	8081	-	TRUE	-	-	-
+TCP_8082	Tcp	8082	-	TRUE	-	-	-
+TCP_8083	Tcp	8083	-	TRUE	-	-	-
+TCP_8084	Tcp	8084	-	TRUE	-	-	-
+TCP_8085	Tcp	8085	-	TRUE	-	-	-
+TCP_8088	Tcp	8088	-	TRUE	-	-	-
+TCP_8089	Tcp	8089	-	TRUE	-	-	-
+TCP_8090	Tcp	8090	-	TRUE	-	-	-
+TCP_8095	Tcp	8095	-	TRUE	-	-	-
+TCP_8099	Tcp	8099	-	TRUE	-	-	-
+TCP_81	Tcp	81	-	TRUE	-	-	-
+TCP_8100	Tcp	8100	-	TRUE	-	-	8100
+TCP_8108	Tcp	8108	-	TRUE	-	-	-
+TCP_8109	Tcp	8109	-	TRUE	-	-	-
+TCP_8111	Tcp	8111	-	TRUE	-	-	-
+TCP_8119	Tcp	8119	-	TRUE	-	-	-
+TCP_8129	Tcp	8129	-	TRUE	-	-	-
+TCP_8139	Tcp	8139	-	TRUE	-	-	-
+TCP_8149	Tcp	8149	-	TRUE	-	-	-
+TCP_8159	Tcp	8159	-	TRUE	-	-	-
+TCP_8162	Tcp	8162	-	TRUE	-	-	-
+TCP_8163	Tcp	8163	-	TRUE	-	-	-
+TCP_8169	Tcp	8169	-	TRUE	-	-	-
+TCP_8179	Tcp	8179	-	TRUE	-	-	-
+TCP_8181	Tcp	8181	-	TRUE	-	-	-
+TCP_8188	Tcp	8188	-	TRUE	-	-	-
+TCP_8189	Tcp	8189	-	TRUE	-	-	-
+TCP_8190	Tcp	8190	-	TRUE	-	-	-
+TCP_8199	Tcp	8199	-	TRUE	-	-	-
+TCP_82	Tcp	82	-	TRUE	-	-	-
+TCP_8209	Tcp	8209	-	TRUE	-	-	-
+TCP_8280	Tcp	8280	-	TRUE	-	-	-
+TCP_83	Tcp	83	-	TRUE	-	-	-
+TCP_8300	Tcp	8300	-	TRUE	-	-	-
+TCP_8329	Tcp	8329	-	TRUE	-	-	-
+TCP_8383	Tcp	8383	-	TRUE	-	-	-
+TCP_84	Tcp	84	-	TRUE	-	-	-
+TCP_8401	Tcp	8401	-	TRUE	-	-	-
+TCP_8421	Tcp	8421	-	TRUE	-	-	-
+TCP_8422	Tcp	8422	-	TRUE	-	-	-
+TCP_843	Tcp	843	-	TRUE	-	-	-
+TCP_8443	Tcp	8443	-	TRUE	-	-	-
+TCP_8475	Tcp	8475	-	TRUE	-	-	-
+TCP_8484	Tcp	8484	-	TRUE	-	-	-
+TCP_85	Tcp	85	-	TRUE	-	-	-
+TCP_8509	Tcp	8509	-	TRUE	-	-	-
+TCP_8543	Tcp	8543	-	TRUE	-	-	-
+TCP_8553	Tcp	8553	-	TRUE	-	-	-
+TCP_8580	Tcp	8580	-	TRUE	-	-	-
+TCP_86	Tcp	86	-	TRUE	-	-	-
+TCP_8653	Tcp	8653	-	TRUE	-	-	-
+TCP_8654	Tcp	8654	-	TRUE	-	-	-
+TCP_8655	Tcp	8655	-	TRUE	-	-	-
+TCP_8656	Tcp	8656	-	TRUE	-	-	-
+TCP_8670	Tcp	8670	-	TRUE	-	-	-
+TCP_8675	Tcp	8675	-	TRUE	-	-	-
+TCP_8712	Tcp	8712	-	TRUE	-	-	-
+TCP_873	Tcp	873	-	TRUE	-	-	-
+TCP_8787	Tcp	8787	-	TRUE	-	-	-
+TCP_8813	Tcp	8813	-	TRUE	-	-	-
+TCP_8880	Tcp	8880	-	TRUE	-	-	-
+TCP_8888	Tcp	8888	-	TRUE	-	-	-
+TCP_8900	Tcp	8900	-	TRUE	-	-	-
+TCP_8989	Tcp	8989	-	TRUE	-	-	-
+TCP_8993	Tcp	8993	-	TRUE	-	-	-
+TCP_9000	Tcp	9000	-	TRUE	-	-	-
+TCP_9001	Tcp	9001	-	TRUE	-	-	-
+TCP_9002	Tcp	9002	-	TRUE	-	-	-
+TCP_9003	Tcp	9003	-	TRUE	-	-	-
+TCP_9004	Tcp	9004	-	TRUE	-	-	-
+TCP_9005	Tcp	9005	-	TRUE	-	-	-
+TCP_9010	Tcp	9010	-	TRUE	-	-	-
+TCP_9019	Tcp	9019	-	TRUE	-	-	-
+TCP_902	Tcp	902	-	TRUE	-	-	-
+TCP_9020	Tcp	9020	-	TRUE	-	-	-
+TCP_9021	Tcp	9021	-	TRUE	-	-	-
+TCP_903	Tcp	903	-	TRUE	-	-	-
+TCP_9030	Tcp	9030	-	TRUE	-	-	-
+TCP_9033	Tcp	9033	-	TRUE	-	-	-
+TCP_9040	Tcp	9040	-	TRUE	-	-	-
+TCP_9070	Tcp	9070	-	TRUE	-	-	-
+TCP_9090	Tcp	9090	-	TRUE	-	-	-
+TCP_9091	Tcp	9091	-	TRUE	-	-	-
+TCP_9092	Tcp	9092	-	TRUE	-	-	-
+TCP_9095	Tcp	9095	-	TRUE	-	-	-
+TCP_9098	Tcp	9098	-	TRUE	-	-	-
+TCP_9100	Tcp	9100	-	TRUE	-	-	-
+TCP_9101	Tcp	9101	-	TRUE	-	-	-
+TCP_9102	Tcp	9102	-	TRUE	-	-	-
+TCP_9192	Tcp	9192	-	TRUE	-	-	-
+TCP_9200	Tcp	9200	-	TRUE	-	-	-
+TCP_9200_9300	Tcp	9200-9300	-	TRUE	-	-	-
+TCP_9292	Tcp	9292	-	TRUE	-	-	-
+TCP_9300	Tcp	9300	-	TRUE	-	-	-
+TCP_9389	Tcp	9389	-	TRUE	-	-	-
+TCP_9418	Tcp	9418	-	TRUE	-	-	-
+TCP_943	Tcp	943	-	TRUE	-	-	-
+TCP_9435	Tcp	9435	-	TRUE	-	-	-
+TCP_9436	Tcp	9436	-	TRUE	-	-	-
+TCP_9443	Tcp	9443	-	TRUE	-	-	-
+TCP_9494	Tcp	9494	-	TRUE	-	-	-
+TCP_9595	Tcp	9595	-	TRUE	-	-	-
+TCP_9600	Tcp	9600	-	TRUE	-	-	-
+TCP_9701	Tcp	9701	-	TRUE	-	-	-
+TCP_9702	Tcp	9702	-	TRUE	-	-	-
+TCP_9901	Tcp	9901	-	TRUE	-	-	-
+TCP_9907	Tcp	9907	-	TRUE	-	-	-
+TCP_9927	Tcp	9927	-	TRUE	-	-	-
+TCP_9977	Tcp	9977	-	TRUE	-	-	-
+TCP_9995	Tcp	9995	-	TRUE	-	-	-
+TCP_9997	Tcp	9997	-	TRUE	-	-	-
+TCP_9998	Tcp	9998	-	TRUE	-	-	-
+TCP_9999	Tcp	9999	-	TRUE	-	-	-
+Terrortrojan	Tcp	3456	-	TRUE	-	-	Terror trojan
+TheFlu	Tcp	5534	-	TRUE	-	-	TheFlu trojan
+TransScout	Tcp	2004-2005	-	TRUE	-	-	TransScout trojan
+Trinoo	Tcp	1524	-	TRUE	-	-	Trinoo trojan
+Trojan_Services	group	-	-	-	-	Bionet-Setup	Common ports used by trojan applications.
+-	-	-	-	-	-	Backage	-
+-	-	-	-	-	-	SubSeven-G	-
+-	-	-	-	-	-	SkyDance-T	-
+-	-	-	-	-	-	CrackDown	-
+-	-	-	-	-	-	DaCryptic	-
+-	-	-	-	-	-	DerSphere	-
+-	-	-	-	-	-	DerSphere_II	-
+-	-	-	-	-	-	Freak2k	-
+-	-	-	-	-	-	GateCrasher	-
+-	-	-	-	-	-	HackaTack_31785	-
+-	-	-	-	-	-	HackaTack_31787	-
+-	-	-	-	-	-	HackaTack_31788	-
+-	-	-	-	-	-	HackaTack_31789	-
+-	-	-	-	-	-	HackaTack_31790	-
+-	-	-	-	-	-	HackaTack_31791	-
+-	-	-	-	-	-	HackaTack_31792	-
+-	-	-	-	-	-	ICKiller	-
+-	-	-	-	-	-	InCommand	-
+-	-	-	-	-	-	Jade	-
+-	-	-	-	-	-	Kaos	-
+-	-	-	-	-	-	Kuang2	-
+-	-	-	-	-	-	lpdw0rm	-
+-	-	-	-	-	-	Mneah	-
+-	-	-	-	-	-	Multidropper	-
+-	-	-	-	-	-	NoBackO	-
+-	-	-	-	-	-	Port_6667_trojans	-
+-	-	-	-	-	-	RAT	-
+-	-	-	-	-	-	Remote_Storm	-
+-	-	-	-	-	-	RexxRave	-
+-	-	-	-	-	-	Shadyshell	-
+-	-	-	-	-	-	SocketsdesTroie	-
+-	-	-	-	-	-	SubSeven	-
+-	-	-	-	-	-	Terrortrojan	-
+-	-	-	-	-	-	TheFlu	-
+-	-	-	-	-	-	TransScout	-
+-	-	-	-	-	-	Trinoo	-
+-	-	-	-	-	-	UltorsTrojan	-
+-	-	-	-	-	-	WinHole	-
+-	-	-	-	-	-	Xanadu	-
+UA_CS	udp	32640	UA	FALSE	-	-	-
+UA_PHONE	udp	32512	UA	FALSE	-	-	-
+UDP_10042	Udp	10042	-	TRUE	-	-	-
+UDP_10043	Udp	10043	-	TRUE	-	-	-
+UDP_2002	Udp	2002	-	TRUE	-	-	-
+UDP_20514	Udp	20514	-	TRUE	-	-	-
+UDP_2191	Udp	2191	-	TRUE	-	-	-
+UDP_2404	Udp	2404	-	TRUE	-	-	-
+UDP_2535	Udp	2535	-	TRUE	-	-	-
+UDP_25826	Udp	25826	-	TRUE	-	-	-
+UDP_3851	Udp	3851	-	TRUE	-	-	-
+UDP_427	Udp	427	-	TRUE	-	-	-
+UDP_464	Udp	464	-	TRUE	-	-	-
+UDP_49152_65535	Udp	49152-65535	-	TRUE	-	-	-
+UDP_5000	Udp	5000	-	TRUE	-	-	-
+UDP_6031	Udp	6031	-	TRUE	-	-	-
+UDP_6032	Udp	6032	-	TRUE	-	-	-
+UDP_6033	Udp	6033	-	TRUE	-	-	-
+UDP_6141	Udp	6141	-	TRUE	-	-	-
+UDP_6142	Udp	6142	-	TRUE	-	-	-
+UDP_6143	Udp	6143	-	TRUE	-	-	-
+UDP_6191	Udp	6191	-	TRUE	-	-	-
+UDP_6192	Udp	6192	-	TRUE	-	-	-
+UDP_6193	Udp	6193	-	TRUE	-	-	-
+UDP_6231	Udp	6231	-	TRUE	-	-	-
+UDP_6232	Udp	6232	-	TRUE	-	-	-
+UDP_6233	Udp	6233	-	TRUE	-	-	-
+UDP_6301	Udp	6301	-	TRUE	-	-	-
+UDP_6302	Udp	6302	-	TRUE	-	-	-
+UDP_6303	Udp	6303	-	TRUE	-	-	-
+UDP_6321	Udp	6321	-	TRUE	-	-	-
+UDP_6322	Udp	6322	-	TRUE	-	-	-
+UDP_6323	Udp	6323	-	TRUE	-	-	-
+UDP_6401	Udp	6401	-	TRUE	-	-	-
+UDP_6402	Udp	6402	-	TRUE	-	-	-
+UDP_6403	Udp	6403	-	TRUE	-	-	-
+UDP_67	Udp	67	-	TRUE	-	-	-
+UDP_68	Udp	68	-	TRUE	-	-	-
+UDP_8162	Udp	8162	-	TRUE	-	-	-
+UDP_8163	Udp	8163	-	TRUE	-	-	-
+UDP_873	Udp	873	-	TRUE	-	-	-
+UDP_902	Udp	902	-	TRUE	-	-	-
+UltorsTrojan	Tcp	1234	-	TRUE	-	-	Also used by: SubSeven Java client
+UserCheck	tcp	18300	-	TRUE	-	-	Check Point Daemon Protocol
+VPN1_IPSEC_encapsulation	udp	2746	-	TRUE	-	-	Check Point VPN-1 SecuRemote IPSEC Transport Encapsulation Protocol
+WinHole	Tcp	1081	-	TRUE	-	-	WinHole trojan
+WinMX	Udp	6257	-	TRUE	-	-	Also uses Napster ports
+Witty_Worm	Other	17	-	FALSE	-	-	Witty Worm
+X11	Tcp	6000-6063	-	TRUE	-	-	X Window System
+X11-verify	Other	6	-	FALSE	-	-	X Window System With Authorization
+Xanadu	Tcp	1031	-	TRUE	-	-	Xanadu trojan
+Yahoo_Messenger	group	-	-	-	-	Yahoo_Messenger_messages	Yahoo Messenger
+-	-	-	-	-	-	Yahoo_Messenger_Voice_Chat_TCP	-
+-	-	-	-	-	-	Yahoo_Messenger_Voice_Chat_UDP	-
+-	-	-	-	-	-	Yahoo_Messenger_Webcams	-
+Yahoo_Messenger_Voice_Chat_TCP	Tcp	5000-5001	-	FALSE	-	-	Yahoo Messenger Voice Chat
+Yahoo_Messenger_Voice_Chat_UDP	Udp	5000-5010	-	TRUE	-	-	Yahoo Messenger Voice Chat
+Yahoo_Messenger_Webcams	Tcp	5100	-	TRUE	-	-	Yahoo Messenger Webcams video
+Yahoo_Messenger_messages	Tcp	5050	-	TRUE	-	-	Yahoo Messenger messages
+ZSP	other	6	-	FALSE	-	-	Zone Security Protocol
+archie	Udp	1525	-	TRUE	-	-	Archie Internet Protocol, search for files over FTP servers
+backweb	other	17	BackWeb	FALSE	-	-	PUSH Web applications, send information directly to desktops. over the Internet
+biff	Udp	512	-	TRUE	-	-	UNIX biff Protocol, give notice of incoming mail messages
+bootp	udp	67	-	TRUE	-	-	Bootstrap Protocol Server, users automatically configured
+cachefsd	Rpc	100235	-	-	-	-	SUN NFS/RPC file system cachefs daemon
+cmsd	Rpc	100068	-	-	-	-	Calendar Manager Service Daemon
+daytime	group	-	-	-	-	daytime-tcp	Daytime Protocol group (TCP/UDP)
+-	-	-	-	-	-	daytime-udp	-
+daytime-tcp	Tcp	13	-	TRUE	-	-	Daytime Server Protocol (TCP)
+daytime-udp	Udp	13	-	TRUE	-	-	Daytime Server Protocol (UDP)
+dest-unreach	Icmp	-	-	-	-	-	ICMP, destination unreach
+destination-unreachable	icmpv6	-	-	-	-	-	-
+dhcp-relay	Udp	67	-	FALSE	67	-	DHCP relay agent
+dhcp-rep-localmodule	Udp	68	-	FALSE	67	-	DHCP reply to enforcement module only
+dhcp-req-localmodule	Udp	67	-	FALSE	68	-	DHCP request from enforcement module only
+discard	group	-	-	-	-	discard-tcp	Discard Protocol group (TCP/UDP)
+-	-	-	-	-	-	discard-udp	-
+discard-tcp	Tcp	9	-	TRUE	-	-	Discard Server Protocol (TCP)
+discard-udp	Udp	9	-	TRUE	-	-	Discard Server Protocol (UDP)
+dns	group	-	-	-	-	domain-tcp	Domain Name System (TCP/UDP)
+-	-	-	-	-	-	domain-udp	-
+domain-tcp	Tcp	53	DNS_TCP	TRUE	-	-	Domain Name System Download
+domain-udp	Udp	53	DNS_UDP	TRUE	-	-	Domain Name System Queries
+eDonkey	group	-	-	-	-	eDonkey_4661	eDonkey protocol. Used also by other clients.
+-	-	-	-	-	-	eDonkey_4662	-
+-	-	-	-	-	-	eDonkey_4665	-
+eDonkey_4661	Tcp	4661	-	TRUE	-	-	eDonkey protocol. Used also by other clients.
+eDonkey_4662	Tcp	4662	-	TRUE	-	-	eDonkey protocol. Used also by other clients.
+eDonkey_4665	Udp	4665	-	TRUE	-	-	eDonkey protocol. Used also by other clients.
+echo	group	-	-	-	-	echo-tcp	Echo Protocol group (TCP/UDP)
+-	-	-	-	-	-	echo-udp	-
+echo-reply	Icmp	-	-	-	-	-	ICMP, echo reply
+echo-reply6	icmpv6	-	-	-	-	-	-
+echo-request	Icmp	-	-	-	-	-	ICMP, echo request
+echo-request6	icmpv6	-	-	-	-	-	Echo request for IPv6
+echo-tcp	Tcp	7	-	TRUE	-	-	Echo Protocol (TCP)
+echo-udp	Udp	7	-	TRUE	-	-	Echo Protocol (UDP)
+egp	other	8	-	TRUE	-	-	Exterior Gateway Protocol, convey net-reachability information between gateways
+exec	Tcp	512	RSHELL	TRUE	-	-	Remote execution (rexec)
+finger	Tcp	79	-	TRUE	-	-	UNIX, Finger Protocol
+ftp	Tcp	21	FTP	TRUE	-	-	File Transfer Protocol
+ftp-bidir	Tcp	21	FTP-BIDIR	FALSE	-	-	File Transfer Protocol with bi-directional data transfer
+ftp-pasv	Tcp	21	FTP-PASV	FALSE	-	-	File Transfer Protocol - PASV mode only
+ftp-port	Tcp	21	FTP-PORT	FALSE	-	-	File Transfer Protocol - PORT mode only
+ftp_mapped	Other	6	-	FALSE	-	-	FTP Port Mapping Service
+ggp	other	3	-	TRUE	-	-	Gateway-to-Gateway protocol
+gopher	Tcp	70	-	TRUE	-	-	The Internet Gopher Protocol
+gre	other	47	-	TRUE	-	-	-
+gtp_mm_v0_default	gtp_mm_v0	3386	-	-	-	-	GTP Mobility Management version 0
+gtp_mm_v1_default	gtp_mm_v1	2123	-	-	-	-	GTP Mobility Management version 1
+gtp_v0_default	gtp	3386	-	FALSE	-	-	GPRS Tunneling Protocol version 0
+gtp_v0_path_mgmt	Other	17	-	FALSE	-	-	GTP version 0 path management
+gtp_v1_default	gtp_v1	-	-	FALSE	-	-	GPRS Tunneling Protocol version 1
+gtp_v1_path_mgmt	Other	17	-	FALSE	-	-	GTP version 1 path management
+high_udp_for_secure_SCCP	other	17	-	FALSE	-	-	-
+home-agent-address-discovery	icmpv6	-	-	-	-	-	-
+home-agent-address-discovery2	icmpv6	-	-	-	-	-	-
+http	Tcp	80	HTTP	TRUE	-	-	Hypertext Transfer Protocol
+http_mapped	Other	6	-	FALSE	-	-	HTTP Port Mapping Service
+https	tcp	443	ENC-HTTP	TRUE	-	-	HTTP protocol over TLS/SSL
+iMesh	Tcp	5000	-	TRUE	-	-	This port also used by many trojans and the upnp service
+icmp-proto	other	1	-	TRUE	-	-	Internet Control Message Protocol
+icmp-requests	group	-	-	-	-	echo-request	ICMP, requests group
+-	-	-	-	-	-	info-req	-
+-	-	-	-	-	-	timestamp	-
+-	-	-	-	-	-	mask-request	-
+ident	tcp	113	-	TRUE	-	-	Identify RCS keyword strings in files
+igmp	other	2	-	TRUE	-	-	Internet Group Management Protocol
+igrp	Other	9	-	TRUE	-	-	Cisco Interior Gateway Routing Protocol
+imap	tcp	143	-	TRUE	-	-	Interactive Mail Access Protocol
+info-reply	Icmp	-	-	-	-	-	ICMP, info reply
+info-req	Icmp	-	-	-	-	-	ICMP, info request
+interphone	Udp	22555	-	TRUE	-	-	Vocaltec Internet Phone
+inverse-neighbor-discovery	icmpv6	-	-	-	-	-	-
+inverse-neighbor-discovery2	icmpv6	-	-	-	-	-	-
+irc	group	-	-	-	-	irc1	Internet Relay Chat Protocol
+-	-	-	-	-	-	irc2	-
+irc1	Tcp	6660-6670	-	TRUE	-	-	Internet Relay Chat Protocol
+irc2	Tcp	7000	-	TRUE	-	-	Internet Relay Chat Protocol
+kerberos	group	-	-	-	-	kerberos-udp	Kerberos Protocol group (TCP/UDP)
+kerberos-udp	Udp	750	-	TRUE	-	-	secure method for authenticating a request for service
+ldap	tcp	389	-	TRUE	-	-	Lightweight Directory Access Protocol
+ldap-ssl	tcp	636	-	TRUE	-	-	Lightweight Directory Access Protocol over TLS/SSL
+ldap_udp	udp	389	-	TRUE	-	-	LDAP udp service
+login	Tcp	513	-	TRUE	-	-	Remote login (rlogin)
+lotus	Tcp	1352	-	TRUE	-	-	Lotus iNotes Web Access Protocol
+lpdw0rm	Tcp	515	-	TRUE	-	-	Also used by: Ramen trojan and printer service.
+mask-reply	Icmp	-	-	-	-	-	ICMP, mask reply
+mask-request	Icmp	-	-	-	-	-	ICMP, mask request
+mgcp_CA	Udp	2727	MGCP_UDP	FALSE	-	-	Supported from version R55W, Media Gateway Control Protocol - Call-Agent port
+mgcp_MG	Udp	2427	MGCP_UDP	FALSE	-	-	Supported from version R55W, Media Gateway Control Protocol - Media Gateway port
+microsoft-ds	Tcp	445	CIFS_PROTOCOL	TRUE	-	-	Microsoft CIFS over TCP
+microsoft-ds-udp	udp	445	-	TRUE	-	-	Microsoft CIFS over UDP
+mobile-prefix-advertisement	icmpv6	-	-	-	-	-	-
+mobile-prefix-solicitation	icmpv6	-	-	-	-	-	-
+mountd	Rpc	100005	-	-	-	-	Initiate client access to NFS application
+multicast-listener-done	icmpv6	-	-	-	-	-	-
+multicast-listener-query	icmpv6	-	-	-	-	-	-
+multicast-listener-report	icmpv6	-	-	-	-	-	-
+name	Udp	42	-	TRUE	-	-	Host Name Server
+nbdatagram	Udp	138	NBDATAGRAM	TRUE	-	-	NetBios Datagram Service
+nbname	Udp	137	NBNAME	TRUE	-	-	NetBios Name Service
+nbsession	Tcp	139	CIFS_PROTOCOL	TRUE	-	-	NetBios Session Service
+neighbor-advertisement	icmpv6	-	-	-	-	-	Neighbor Advertisement message
+neighbor-solicitation	icmpv6	-	-	-	-	-	Neighbor Solicitation message
+netshow	Tcp	1755	NetShow	TRUE	-	-	Microsoft NetShow (Windows Media Player)
+netstat	Tcp	15	-	TRUE	-	-	UNIX netstat Protocol, show network status
+nfsd	Udp	2049	-	TRUE	-	-	Network File System Daemon over UDP (earlier versions of NFS)
+nfsd-tcp	Tcp	2049	-	TRUE	-	-	Network File System Daemon over TCP
+nfsprog	Rpc	100003	-	-	-	-	RPCs Network File System (Ordinary)
+nisplus	Rpc	100300	-	-	-	-	NIS+ later version provides additional security and other facilities
+nlockmgr	Rpc	100021	-	-	-	-	RPC, Network Lock Manager
+nntp	Tcp	119	-	TRUE	-	-	Network News Transfer Protocol
+ntp	group	-	-	-	-	ntp-tcp	Network Time Protocol group (TCP/UDP)
+-	-	-	-	-	-	ntp-udp	-
+ntp-tcp	Tcp	123	-	TRUE	-	-	Network Time Protocol (TCP)
+ntp-udp	Udp	123	-	TRUE	-	-	Network Time Protocol (UDP)
+ospf	other	89	-	TRUE	-	-	Open Shortest Path First Interior GW Protocol
+packet_too-big	icmpv6	-	-	-	-	-	-
+param-prblm	Icmp	-	-	-	-	-	ICMP, parameters problem
+parameter-problem	icmpv6	-	-	-	-	-	-
+pcANYWHERE	group	-	-	-	-	pcANYWHERE-data	Symantec pcANYWHERE
+-	-	-	-	-	-	pcANYWHERE-stat	-
+pcANYWHERE-data	Tcp	5631	-	TRUE	-	-	PCs remote access security software, data
+pcANYWHERE-stat	Udp	5632	-	TRUE	-	-	PCs remote access security software, status
+pcTELECOMMUTE	group	-	-	-	-	pcANYWHERE	Symantec pcTELECOMMUTE
+-	-	-	-	-	-	pcTELECOMMUTE-FileSync	-
+pcTELECOMMUTE-FileSync	Tcp	2299	-	TRUE	-	-	Symantec pcTELECOMMUTE File Synchronization
+pcnfsd	Rpc	150001	-	-	-	-	PCs (windows client) password authorization
+pim	Other	103	-	TRUE	-	-	-
+pop-2	Tcp	109	-	TRUE	-	-	Post Office Protocol - Version 2
+pop-3	Tcp	110	-	TRUE	-	-	Post Office Protocol - Version 3
+pptp-tcp	Tcp	1723	PPTP_TCP	TRUE	-	-	Point-to-Point Tunneling Protocol, extension of PPP
+redirect	Icmp	-	-	-	-	-	ICMP, route redirect
+redirect6	icmpv6	-	-	-	-	-	-
+reserved	icmpv6	-	-	-	-	-	-
+rip	Udp	520	-	TRUE	-	-	Routing Information Protocol
+rip-response	other	17	-	FALSE	-	-	Routing Information Protocol - response
+router-advertisement	icmpv6	-	-	-	-	-	Router Advertisement message
+router-renumbering	icmpv6	-	-	-	-	-	-
+router-solicitation	icmpv6	-	-	-	-	-	Router Solicitation message
+rstat	Rpc	100001	-	-	-	-	RPC, Remote statistics
+rtsp	tcp	554	RTSP	TRUE	-	-	Real Time Streaming Protocol
+rwall	Rpc	100008	-	-	-	-	RPC, Shutdown messages
+sadmind	Rpc	100232	-	-	-	-	Solstice AdminSuite
+sasser-icmp	Other	1	-	FALSE	-	-	Block Sasser.d worm ICMP packets
+securid	group	-	-	-	-	securid-udp	Secure ID group
+-	-	-	-	-	-	securidprop	-
+securid-udp	Udp	5500	-	TRUE	-	-	Token based Authentication service (UDP)
+securidprop	Tcp	5510	-	TRUE	-	-	Token based Authentication service (TCP)
+shell	Tcp	514	RSHELL	TRUE	-	-	Remote shell (rsh)
+sip	Udp	5060	SIP_UDP	FALSE	-	-	Session Initiation Protocol
+sip-tcp	TCP	5060	SIP_TCP_PROTO	FALSE	-	-	Session Initiation Protocol over TCP
+sip_any	Udp	5060	SIP_UDP_ANY	FALSE	-	-	Session Initiation Protocol
+sip_any-tcp	TCP	5060	SIP_ANY_TCP_PROTO	FALSE	-	-	-
+sip_dynamic_ports	Other	-1	-	FALSE	-	-	Supported from version R55W, it allows sip connection to be opened on a dynamic port and not on the sip well-known port
+sip_tls_authentication	Tcp	5061	SIP_TCP_PROTO	FALSE	-	-	-
+sip_tls_not_inspected	Tcp	5061	None	FALSE	-	-	-
+smtp	Tcp	25	SMTP	TRUE	-	-	Simple Mail Transfer Protocol
+smtp_mapped	Other	6	-	FALSE	-	-	SMTP Port Mapping Service
+snmp	udp	161	-	TRUE	-	-	Simple Network Management Protocol
+snmp-read	udp	161	Snmp-Read	FALSE	-	-	Simple Network Management Protocol - Read Only
+snmp-trap	udp	162	-	TRUE	-	-	Simple Network Management Protocol Traps
+snmpXdmid	Rpc	100249	-	-	-	-	SUN SNMP to DMI mapper daemon
+source-quench	Icmp	-	-	-	-	-	ICMP, source quench
+sqlnet1	tcp	1521	-	TRUE	-	-	Oracle SQL*Net Version 1
+sqlnet2	group	-	-	-	-	sqlnet2-1521	Oracle SQL*Net Version 2 Services
+-	-	-	-	-	-	sqlnet2-1525	-
+-	-	-	-	-	-	sqlnet2-1526	-
+sqlnet2-1521	tcp	1521	SQLNET2	FALSE	-	-	part of Oracle SQL*Net Version 2 Services
+sqlnet2-1525	tcp	1525	SQLNET2	TRUE	-	-	part of Oracle SQL*Net Version 2 Services
+sqlnet2-1526	tcp	1526	SQLNET2	TRUE	-	-	part of Oracle SQL*Net Version 2 Services
+ssh	Tcp	22	-	TRUE	-	-	secure shell, encrypted and authenticated rsh
+ssh_version_2	tcp	22	SSH2	FALSE	-	-	Secure Shell, version 1.x block
+ssl_v3	tcp	443	SSL_V3	FALSE	-	-	SSL version 3, dropping anything else.
+statd	Rpc	100024	-	-	-	-	Network status monitor daemon
+syslog	Udp	514	-	TRUE	-	-	UNIX syslog Protocol, control system log
+tcp-443	Tcp	443	None	FALSE	-	-	-
+tcp-high-ports	tcp	>1023	-	FALSE	-	-	TCP Ports 1024-65535
+telnet	Tcp	23	-	TRUE	-	-	Telnet Protocol
+tftp	Udp	69	-	TRUE	-	-	Trivial File Transfer Protocol
+time	group	-	-	-	-	time-tcp	Time Server Protocol
+-	-	-	-	-	-	time-udp	-
+time-exceeded	Icmp	-	-	-	-	-	ICMP, time to live exceeded
+time-exceeded6	icmpv6	-	-	-	-	-	-
+time-tcp	Tcp	37	-	TRUE	-	-	Time Server Protocol (TCP)
+time-udp	Udp	37	-	TRUE	-	-	Time Server Protocol (UDP)
+timestamp	Icmp	-	-	-	-	-	ICMP, timestamp request
+timestamp-reply	Icmp	-	-	-	-	-	ICMP, timestamp reply
+traceroute	other	17	-	TRUE	-	-	UNIX Traceroute, print the route packets take to network host
+ttdbserverd	Rpc	100083	-	-	-	-	ToolTalk database server
+tunnel_test	udp	18234	-	TRUE	-	-	Check Point tunnel testing application
+tunnel_test_mapped	Other	17	-	FALSE	-	-	tunnel testing for a module performing the tunnel test
+udp-high-ports	udp	>1023	-	FALSE	-	-	UDP Ports 1024-65535
+uucp	Tcp	540	-	TRUE	-	-	Unix-to-Unix Copy Program
+vrrp	other	112	-	TRUE	-	-	Virtual Router Redundancy Protocol
+wais	Tcp	210	-	TRUE	-	-	Wide Area Information Servers
+wap_wdp	Udp	9200	MMS	FALSE	-	-	Wireless Datagram Protocol: a simplified protocol suitable for low bandwidth mobile stations enables a connectionless mode.
+wap_wdp_enc	Udp	9202	-	FALSE	-	-	Wireless Datagram Protocol with Wireless Transport Layer Security
+wap_wtp	Udp	9201	MMS	FALSE	-	-	Wireless Transaction Protocol: a simplified protocol suitable for low bandwidth mobile stations enables a connection mode.
+wap_wtp_enc	Udp	9203	-	FALSE	-	-	Wireless Transaction Protocol with Wireless Transport Layer Security
+welchia-icmp	Other	1	-	FALSE	-	-	Block Welchia virus ICMP packets
+who	Udp	513	-	TRUE	-	-	UNIX who Protocol, who is on the system
+winframe	Tcp	1494	-	TRUE	-	-	Allows servers to provide applications and data for attached computer workstations (Windows)
+ypbind	Rpc	100007	-	-	-	-	Sun Yellow Pages binder (NIS), provide servers addressing information
+yppasswd	Rpc	100009	-	-	-	-	Sun Yellow Pages protocol (NIS), password server
+ypserv	Rpc	100004	-	-	-	-	Sun Yellow Pages directory service (YP) protocol, now known as NIS
+ypupdated	Rpc	100028	-	-	-	-	Sun Yellow Pages protocol (NIS), update service
+ypxfrd	Rpc	100069	-	-	-	-	Sun Yellow Pages protocol (NIS), transfers NIS maps
