@@ -9,13 +9,14 @@ import ipcalc
 class Match_zone_from_network:
  
   default_zone_name = "" 
-  read_files_name = ["./source.renew","destination.renew"]
-  output_files_name = ["./source.zonematch","destination.zonematch"]
+  read_files_name = ["./source.renew","./destination.renew"]
+  output_files_name = ["./source.match_zone","./destination.match_zone"]
   database_network_zone = {}
 
   def writeOutput(self, file_name, input_data):
+     string_msg = "\t".join(input_data)+"\n"
      f = open(file_name,"a")
-     f.write(input_data)
+     f.write(string_msg)
      f.close()
 
   def Start(self):
@@ -46,7 +47,7 @@ class Match_zone_from_network:
              if "0.0.0.0/0" == policy_object:
                self.database_network_zone[policy_object] = self.default_zone_name
                combination = [ policy_number, self.default_zone_name, policy_object ]
-               writeOutput(out_file_name, combination)
+               self.writeOutput(out_file_name, combination)
                continue
 
              # find zone name.. ratating all routing information
@@ -68,23 +69,25 @@ class Match_zone_from_network:
                    else:
                      if _ip_address_ in ipcalc.Network(policy_object):
                        combination = [ policy_number, _zone_name_, _network_mask_ ]
-                       writeOutput(out_file_name, combination)
+                       self.writeOutput(out_file_name, combination)
             
              # Not matched case, it will be default gateway zone. 
              if not match_status:
                self.database_network_zone[policy_object] = self.default_zone_name
                combination = [ policy_number, self.default_zone_name, policy_object ]
-               writeOutput(out_file_name, combination)
+               self.writeOutput(out_file_name, combination)
              else:
                combination = [ policy_number, self.database_network_zone[policy_object], policy_object ]
-               writeOutput(out_file_name, combination)
+               self.writeOutput(out_file_name, combination)
 
            # searching database and fine zone according to network
            else:
              combination = [ policy_number, self.database_network_zone[policy_object], policy_object ]
-             writeOutput(out_file_name, combination)
-     #
-     file_index = file_index + 1
+             self.writeOutput(out_file_name, combination)
+
+        # go to next file
+        print read_file_name + " has been done!"
+        file_index = file_index + 1
 
 
 if __name__=="__main__":
