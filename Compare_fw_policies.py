@@ -256,8 +256,8 @@ class Compare_fw_policies(Routing_information,Utility_function):
    string_ruleid_and_object_list = self.Read_file("./service.txt")
    for string_v in string_ruleid_and_object_list:
       string_v_without_blank = string_v.strip()
-      [ ruleid_, service_ ] = string_v_without_blank.split()
-      service_ruleid_port.append([ ruleid_, service_ ])
+      [ ruleid_, proto_, service_ ] = string_v_without_blank.split()
+      service_ruleid_port.append([ ruleid_, proto_+"_"+service_ ])
    final_service_list = []
    for index in range(int(self.policy_sequence_count)):
       real_index = index + 1

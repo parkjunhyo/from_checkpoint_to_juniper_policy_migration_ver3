@@ -16,7 +16,3 @@ class Utility_function:
    mask = (0xffffffff << (32 - int(bits))) & 0xffffffff
    return (ipaddr & mask) == (netaddr & mask)
 
-
-
-
-
