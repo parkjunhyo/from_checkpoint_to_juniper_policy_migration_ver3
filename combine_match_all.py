@@ -9,6 +9,8 @@ files_name_list_to_read = {
                             "service":"./service.renew"
                           }
 
+outfile_name = "./juniper_type_result.txt"
+
 def readFile(file_name):
    f = open(file_name, "r")
    contents = f.readlines()
@@ -107,31 +109,36 @@ if len(sorted_by_zone_source) != len(sorted_by_zone_destination) or len(sorted_b
 # print out
 policy_rule_number = len(sorted_by_zone_source)
 policy_index = 0
+f = open(outfile_name,"w")
+f.close()
 for i_ in range(policy_rule_number):
    policy_index = i_ + 1
    # source destination combination
-   print "----------------- Policy : %s -----------------" % (str(policy_index))
+   f = open(outfile_name,"a")
+   f.write("\n")
+   f.write("-------------------------------------------- Policy : %s --------------------------------------\n" % (str(policy_index)))
    for _source_value_ in searching_object_matched_ruld_number(policy_index, sorted_by_zone_source):
       for _destination_value_ in searching_object_matched_ruld_number(policy_index, sorted_by_zone_destination):
          rule_status = "OK"
          if _source_value_[0] == _destination_value_[0]:
            rule_status = "No Good"
-         print "From : %s, To : %s  ..... [ %s ]" % (_source_value_[0],_destination_value_[0],rule_status)
-         print "\n"
-         print "Source IP Address : "
+         f.write("\n\n")
+         f.write("Policy ID : %s, From : %s, To : %s  ..... [ %s ]\n\n" % (str(policy_index),_source_value_[0],_destination_value_[0],rule_status))
+         f.write("Source IP Address : \n")
          for _src_network_ in _source_value_[1]:
-            print _src_network_
-         print "\n"
-         print "Destination IP Address : "
+            f.write(_src_network_+"\n")
+         f.write("\n")
+         f.write("Destination IP Address : \n")
          for _dst_network_ in _destination_value_[1]:       
-            print _dst_network_
+            f.write(_dst_network_+"\n")
          # service combination
-         print "\n"
-         print "Service Port: "
+         f.write("\n")
+         f.write("Service Port: \n")
          for _service_value_ in searching_object_matched_ruld_number(policy_index, sorted_service):
             if len(_service_value_) == 1:
               service_msg = " Port Number : %s" % (_service_value_[0])
             else:
               service_msg = " Proto type : %s, Port Number : %s" % (_service_value_[0],_service_value_[1])
-            print service_msg
+            f.write(service_msg+"\n")
+   f.close()
 
