@@ -70,7 +70,11 @@ def sorting_by_zone_name(data_list_type):
         sorting_list.append([ policy_number, zone_object_combination_list ])
    return sorting_list
             
-
+def searching_object_matched_ruld_number(policy_rule_number, data_list_type):
+   for content in data_list_type:
+      _policy_number_ = content[0]
+      if policy_rule_number == _policy_number_:
+        return content[1]
 
 source_contents = readFile(files_name_list_to_read["source"])
 destination_contents = readFile(files_name_list_to_read["destination"])
@@ -101,5 +105,33 @@ if len(sorted_by_zone_source) != len(sorted_by_zone_destination) or len(sorted_b
   sys.exit(0)
 
 # print out
-
+policy_rule_number = len(sorted_by_zone_source)
+policy_index = 0
+for i_ in range(policy_rule_number):
+   policy_index = i_ + 1
+   # source destination combination
+   print "----------------- Policy : %s -----------------" % (str(policy_index))
+   for _source_value_ in searching_object_matched_ruld_number(policy_index, sorted_by_zone_source):
+      for _destination_value_ in searching_object_matched_ruld_number(policy_index, sorted_by_zone_destination):
+         rule_status = "OK"
+         if _source_value_[0] == _destination_value_[0]:
+           rule_status = "No Good"
+         print "From : %s, To : %s  ..... [ %s ]" % (_source_value_[0],_destination_value_[0],rule_status)
+         print "\n"
+         print "Source IP Address : "
+         for _src_network_ in _source_value_[1]:
+            print _src_network_
+         print "\n"
+         print "Destination IP Address : "
+         for _dst_network_ in _destination_value_[1]:       
+            print _dst_network_
+         # service combination
+         print "\n"
+         print "Service Port: "
+         for _service_value_ in searching_object_matched_ruld_number(policy_index, sorted_service):
+            if len(_service_value_) == 1:
+              service_msg = " Port Number : %s" % (_service_value_[0])
+            else:
+              service_msg = " Proto type : %s, Port Number : %s" % (_service_value_[0],_service_value_[1])
+            print service_msg
 
