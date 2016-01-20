@@ -125,7 +125,7 @@ for i_ in range(policy_rule_number):
       for _destination_value_ in searching_object_matched_ruld_number(policy_index, sorted_by_zone_destination):
          rule_status = "OK"
          if _source_value_[0] == _destination_value_[0]:
-           rule_status = "No Good"
+           rule_status = "NOT_OK"
          f.write("\n\n")
          f.write("Policy ID : %s, From : %s, To : %s  ..... [ %s ]\n\n" % (str(policy_index),_source_value_[0],_destination_value_[0],rule_status))
          f.write("Source IP Address : \n")
