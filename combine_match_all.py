@@ -10,6 +10,7 @@ files_name_list_to_read = {
                           }
 
 outfile_name = "./juniper_type_result.txt"
+text_type_outfile_name = "./text_type_result.txt"
 
 def readFile(file_name):
    f = open(file_name, "r")
@@ -111,10 +112,13 @@ policy_rule_number = len(sorted_by_zone_source)
 policy_index = 0
 f = open(outfile_name,"w")
 f.close()
+p = open(text_type_outfile_name,"w")
+p.close()
 for i_ in range(policy_rule_number):
    policy_index = i_ + 1
    # source destination combination
    f = open(outfile_name,"a")
+   p = open(text_type_outfile_name,"a")
    f.write("\n")
    f.write("-------------------------------------------- Policy : %s --------------------------------------\n" % (str(policy_index)))
    for _source_value_ in searching_object_matched_ruld_number(policy_index, sorted_by_zone_source):
@@ -125,20 +129,37 @@ for i_ in range(policy_rule_number):
          f.write("\n\n")
          f.write("Policy ID : %s, From : %s, To : %s  ..... [ %s ]\n\n" % (str(policy_index),_source_value_[0],_destination_value_[0],rule_status))
          f.write("Source IP Address : \n")
+         source_members_string = ""
+         source_members_group = []
          for _src_network_ in _source_value_[1]:
+            source_members_group.append(_src_network_)
             f.write(_src_network_+"\n")
+         source_members_string = ";".join(source_members_group)
          f.write("\n")
          f.write("Destination IP Address : \n")
+         desti_members_string = ""
+         desti_members_group = []
          for _dst_network_ in _destination_value_[1]:       
+            desti_members_group.append(_dst_network_)
             f.write(_dst_network_+"\n")
+         desti_members_string = ";".join(desti_members_group) 
          # service combination
          f.write("\n")
          f.write("Service Port: \n")
+
+         port_members_string = ""
+         port_members_group = []
          for _service_value_ in searching_object_matched_ruld_number(policy_index, sorted_service):
+            port_members_group.append(":".join(_service_value_))
             if len(_service_value_) == 1:
               service_msg = " Port Number : %s" % (_service_value_[0])
             else:
               service_msg = " Proto type : %s, Port Number : %s" % (_service_value_[0],_service_value_[1])
             f.write(service_msg+"\n")
+         port_members_string = ";".join(port_members_group)
+         all_member_string = "\t".join([str(policy_index), rule_status, _source_value_[0], source_members_string, _destination_value_[0], desti_members_string, port_members_string])
+         p.write(all_member_string+"\n")
+   p.close()
    f.close()
+ 
 
