@@ -45,10 +45,16 @@ class Match_zone_from_network:
 
              # default zone
              if "0.0.0.0/0" == policy_object:
-               self.database_network_zone[policy_object] = self.default_zone_name
-               combination = [ policy_number, self.default_zone_name, policy_object ]
-               self.writeOutput(out_file_name, combination)
+               #self.database_network_zone[policy_object] = self.default_zone_name
+               #combination = [ policy_number, self.default_zone_name, policy_object ]
+               #self.writeOutput(out_file_name, combination)
+               #continue
+               self.database_network_zone[policy_object] = "all_zone"
+               for _zone_name_ in Routing_information.zone_name:
+                  combination = [ policy_number, _zone_name_, policy_object ]
+                  self.writeOutput(out_file_name, combination)
                continue
+                  
 
              # find zone name.. ratating all routing information
              compare_subnet_size = "0"
@@ -82,8 +88,15 @@ class Match_zone_from_network:
 
            # searching database and fine zone according to network
            else:
-             combination = [ policy_number, self.database_network_zone[policy_object], policy_object ]
-             self.writeOutput(out_file_name, combination)
+             #combination = [ policy_number, self.database_network_zone[policy_object], policy_object ]
+             #self.writeOutput(out_file_name, combination)
+             if self.database_network_zone[policy_object] == "all_zone":
+               for _zone_name_ in Routing_information.zone_name:
+                  combination = [ policy_number, _zone_name_, policy_object ]
+                  self.writeOutput(out_file_name, combination)
+             else:
+               combination = [ policy_number, self.database_network_zone[policy_object], policy_object ]
+               self.writeOutput(out_file_name, combination)
 
         # go to next file
         print read_file_name + " has been done!"
