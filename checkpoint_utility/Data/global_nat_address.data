@@ -1,6 +1,5 @@
 Address Translation Policy: KRIS10-PUBFW-Rule	-
 NO.	TRANSLATED PACKET
--	SOURCE
 1	Any
 2	Any
 3	Any

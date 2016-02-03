@@ -35,9 +35,6 @@ for origin_data in origin_data_list:
       policy_no = read_content_list[0]
       policy_object = read_content_list[1]
 
-
-      print policy_no
-      print policy_object
       if policy_no not in policy_no_str_list:
         continue
 
