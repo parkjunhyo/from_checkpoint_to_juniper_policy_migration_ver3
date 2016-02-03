@@ -11,10 +11,7 @@
 ./gen_security_objects.py
 
 # step4 : nat source
-./gen_global_nat_source.py
-
-# step5 : nat address
-./gen_global_nat_address.py  
+./gen_global_nat.py
 
 # step6
 ./renew_srcdst_policy.py
