@@ -3,11 +3,11 @@
 import os, random, time
 from ipaddr import IPAddress as ip_address
 
-origin_src_data = "./source.gen"
-origin_dst_data = "./destination.gen"
+origin_src_data = "./global_nat_source.gen"
+origin_dst_data = "./global_nat_address.gen"
 
-output_src_data = "./source.renew"
-output_dst_data = "./destination.renew"
+output_src_data = "./global_nat_source.renew"
+output_dst_data = "./global_nat_address.renew"
 
 
 origin_data_list = [origin_src_data, origin_dst_data]
@@ -107,7 +107,6 @@ for origin_data in origin_data_list:
       policy_no = read_content_list[0]
       policy_object = read_content_list[1]
       lookup_object(policy_no,policy_object,output_file_name)
-      
       print "[ %s ] policy number [ %s ] has been done" % (str(output_file_name), policy_no)
 
    list_index = list_index + 1
