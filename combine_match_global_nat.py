@@ -8,8 +8,8 @@ files_name_list_to_read = {
                             "destination":"./global_nat_address.match_zone"
                           }
 
-outfile_name = "./global_nat_result.txt"
-text_type_outfile_name = "./global_nat_result_excl.txt"
+outfile_name = "./result_global_nat_match.txt"
+text_type_outfile_name = "./text_type__global_nat_result.txt"
 
 def readFile(file_name):
    f = open(file_name, "r")

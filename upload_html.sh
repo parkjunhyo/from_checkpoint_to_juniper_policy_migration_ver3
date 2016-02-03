@@ -22,3 +22,9 @@ moving $file_name $html_dir
 
 file_name="./text_type_result.txt"
 moving $file_name $html_dir
+
+file_name="./result_global_nat_match.txt"
+moving $file_name $html_dir
+
+file_name="./text_type__global_nat_result.txt"
+moving $file_name $html_dir
