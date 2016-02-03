@@ -9,8 +9,8 @@ import ipcalc
 class Match_zone_from_network:
  
   default_zone_name = "" 
-  read_files_name = ["./source.renew","./destination.renew"]
-  output_files_name = ["./source.match_zone","./destination.match_zone"]
+  read_files_name = ["./source.renew","./destination.renew","./global_nat_source.renew","./global_nat_address.renew"]
+  output_files_name = ["./source.match_zone","./destination.match_zone","./global_nat_source.match_zone","./global_nat_address.match_zone"]
   database_network_zone = {}
 
   def writeOutput(self, file_name, input_data):
