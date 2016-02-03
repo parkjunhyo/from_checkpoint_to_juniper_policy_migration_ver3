@@ -1,27 +1,24 @@
 #! /usr/bin/env python
 
 ### file names descriptions
-origin_src_data = "./Data/source.data"
-origin_dst_data = "./Data/destination.data"
-origin_port_data = "./Data/service.data"
+origin_src_data = "./Data/global_nat_address.data"
+origin_addr_data= "./Data/global_nat_source.data"
 
-output_src_data = "./source.gen"
-output_dst_data = "./destination.gen"
-output_port_data = "./service.gen"
+output_src_data = "./global_nat_address.gen"
+output_addr_data = "./global_nat_source.gen"
 
 policy_no_limit = range(100000)
 policy_no_str_list = map(str,policy_no_limit)
 policy_no_str_list.append("-")
 
-origin_data_list = [origin_src_data, origin_dst_data, origin_port_data]
-output_data_list = [output_src_data, output_dst_data, output_port_data]
+origin_data_list = [origin_src_data, origin_addr_data ]
+output_data_list = [output_src_data, output_addr_data ]
 
 list_index = 0
-#above_no = ""
-#above_object = ""
 
 
 for origin_data in origin_data_list:
+   
    above_no = ""
    above_object = ""
 
@@ -38,6 +35,9 @@ for origin_data in origin_data_list:
       policy_no = read_content_list[0]
       policy_object = read_content_list[1]
 
+
+      print policy_no
+      print policy_object
       if policy_no not in policy_no_str_list:
         continue
 
