@@ -13,6 +13,9 @@
 # step4 : nat source
 ./gen_global_nat.py
 
+# step5 : nat
+./renew_global_nat.py
+
 # step6
 ./renew_srcdst_policy.py
 
@@ -22,3 +25,5 @@
 # step8
 ./confirm_renew_files.py
 
+# step9
+./confirm_renew_global_nat.py
