@@ -27,3 +27,6 @@
 
 # step9
 ./confirm_renew_global_nat.py
+
+# move file
+mv *.renew ../
