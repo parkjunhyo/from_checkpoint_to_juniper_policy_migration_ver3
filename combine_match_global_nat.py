@@ -123,7 +123,7 @@ for i_ in range(policy_rule_number):
          #rule_status = "OK"
          #if _source_value_[0] == _destination_value_[0]:
          #  rule_status = "NOT_OK"
-         print _destination_value_
+         
          rule_status = ""
          if "0.0.0.0/0" in _destination_value_[1]:
            rule_status = "NOT_OK"
