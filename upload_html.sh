@@ -28,3 +28,6 @@ moving $file_name $html_dir
 
 file_name="./text_type__global_nat_result.txt"
 moving $file_name $html_dir
+
+file_name="./static_nat_address.txt"
+moving $file_name $html_dir

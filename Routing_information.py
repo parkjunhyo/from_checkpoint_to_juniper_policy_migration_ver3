@@ -67,6 +67,12 @@ class Routing_information:
                                )  
                 }
 
+ public_nat_network = (
+                        "175.126.178.0/24",
+                        "175.126.206.0/24",
+                        "175.126.208.0/24"
+                      )
+
  juniper_info = {
                   #"device_ip":"159.203.103.72",
                   "device_ip":"211.206.101.100",
