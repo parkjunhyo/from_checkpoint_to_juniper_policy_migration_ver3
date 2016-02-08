@@ -11,4 +11,7 @@
 ./combine_match_global_nat.py 
 
 # step4
+./get_static_nat.py
+
+# step5
 ./upload_html.sh
