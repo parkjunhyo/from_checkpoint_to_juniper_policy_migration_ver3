@@ -6,7 +6,8 @@ from Routing_information import Routing_information
 files_name_list_to_read = {
                             "source":"./source.match_zone", 
                             "destination":"./destination.match_zone", 
-                            "service":"./service.renew"
+                            "service":"./service.renew",
+                            "comment":"./comment.renew"
                           }
 
 outfile_name = "./juniper_type_result.txt"
@@ -107,6 +108,20 @@ if len(sorted_by_zone_source) != len(sorted_by_zone_destination) or len(sorted_b
   print "sourted source : %s, sourted destination : %s, sourted service : %s are not matched" % (str(len(sorted_by_zone_source)), str(len(sorted_by_zone_destination)), str(len(sorted_service)))
   sys.exit(0)
 
+# comment read
+f = open(files_name_list_to_read["comment"],"r")
+comment_contents = f.readlines()
+f.close()
+
+_idx_list_ = []
+_cmt_list_ = []
+for comment_content in comment_contents:
+   [ _index_no_, _comment_ ] = comment_content.strip().split("\t")
+   _idx_list_.append(str(_index_no_))
+   _cmt_list_.append(str(_comment_))
+
+comment_dict = dict(zip(_idx_list_,_cmt_list_))
+
 # print out
 policy_rule_number = len(sorted_by_zone_source)
 policy_index = 0
@@ -124,19 +139,11 @@ for i_ in range(policy_rule_number):
    for _source_value_ in searching_object_matched_ruld_number(policy_index, sorted_by_zone_source):
       for _destination_value_ in searching_object_matched_ruld_number(policy_index, sorted_by_zone_destination):
 
-         #rule_status = "OK"
-         #if _source_value_[0] == _destination_value_[0]:
-         #  rule_status = "NOT_OK"
          rule_status = ""
          if _source_value_[0] == _destination_value_[0]:
            rule_status = "NOT_OK"  
-         elif _source_value_[0] == "pri" and  _destination_value_[0] == "pub":
-           rule_status = "NOT_OK"  
-         elif _source_value_[0] == "pub" and  _destination_value_[0] == "pri":
-           rule_status = "NOT_OK"  
          else:
            rule_status = "OK"
-
 
          f.write("\n\n")
          f.write("Policy ID : %s, From : %s, To : %s  ..... [ %s ]\n\n" % (str(policy_index),_source_value_[0],_destination_value_[0],rule_status))
@@ -148,6 +155,7 @@ for i_ in range(policy_rule_number):
             f.write(_src_network_+"\n")
          source_members_string = ";".join(source_members_group)
          f.write("\n")
+
          f.write("Destination IP Address : \n")
          desti_members_string = ""
          desti_members_group = []
@@ -157,8 +165,8 @@ for i_ in range(policy_rule_number):
          desti_members_string = ";".join(desti_members_group) 
          # service combination
          f.write("\n")
-         f.write("Service Port: \n")
 
+         f.write("Service Port: \n")
          port_members_string = ""
          port_members_group = []
          for _service_value_ in searching_object_matched_ruld_number(policy_index, sorted_service):
@@ -169,8 +177,18 @@ for i_ in range(policy_rule_number):
               service_msg = " Proto type : %s, Port Number : %s" % (_service_value_[0],_service_value_[1])
             f.write(service_msg+"\n")
          port_members_string = ";".join(port_members_group)
-         all_member_string = "\t".join([str(policy_index), rule_status, _source_value_[0], source_members_string, _destination_value_[0], desti_members_string, port_members_string])
+
+         # comment
+         f.write("\n")
+         f.write("Comment: \n")
+         f.write(str(comment_dict[str(policy_index)].strip()))      
+         f.write("\n")
+
+
+         all_member_string = "\t".join([str(policy_index), rule_status, _source_value_[0], source_members_string, _destination_value_[0], desti_members_string, port_members_string, str(comment_dict[str(policy_index)])])
          p.write(all_member_string+"\n")
+
+
    p.close()
    f.close()
  
