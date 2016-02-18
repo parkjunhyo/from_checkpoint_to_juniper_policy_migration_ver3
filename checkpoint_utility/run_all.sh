@@ -13,6 +13,8 @@
 # step4 : nat source
 ./gen_global_nat.py
 
+# comment
+./gen_comment.py
 
 # step6
 ./renew_srcdst_policy.py
