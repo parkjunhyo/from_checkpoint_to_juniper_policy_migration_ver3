@@ -19,5 +19,8 @@
 # step nat
 ./create_command_for_static_nat_juniper.py
 
+# step source
+./create_command_for_source_nat_juniper.py
+
 # step5
 ./upload_html.sh
