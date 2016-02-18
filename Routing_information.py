@@ -82,3 +82,5 @@ class Routing_information:
                 }
  
  command_mode = "test"    # "real" or "test"
+
+ juniper_static_nat_rule_set_name = "from_public_to_trust"
