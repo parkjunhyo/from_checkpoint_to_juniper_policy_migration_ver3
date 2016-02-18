@@ -12,7 +12,7 @@ f.close()
 f = open(output_file_name,"w")
 f.close()
 
-static_nat_rule_set_name = "static_from_pub"
+static_nat_rule_set_name = "dnat_from_pub"
 
 juniper_public_nat = "set security nat static rule-set %s from zone pub\n"
 juniper_inside = "set security nat static rule-set %s rule %s match destination-address %s\n"
