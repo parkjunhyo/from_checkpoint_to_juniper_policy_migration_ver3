@@ -8,3 +8,4 @@ pip install ipaddress
 pip install ipaddr
 pip install netaddr
 pip install paramiko
+pip install ipcalc
