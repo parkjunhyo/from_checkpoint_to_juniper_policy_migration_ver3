@@ -4,7 +4,7 @@ import sys
 from Routing_information import Routing_information
 
 read_file_name = "./text_type_result.txt"
-output_file_name = "./juniper_policy.command"
+output_file_name = "./juniper_policy_command.txt"
 
 f = open(read_file_name,"r")
 contents = f.readlines()
