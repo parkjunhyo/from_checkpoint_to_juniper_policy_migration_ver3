@@ -31,3 +31,7 @@ moving $file_name $html_dir
 
 file_name="./static_nat_address.txt"
 moving $file_name $html_dir
+
+file_name="./juniper_policy.command"
+moving $file_name $html_dir
+

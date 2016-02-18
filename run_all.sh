@@ -13,5 +13,8 @@
 # step4
 ./get_static_nat.py
 
+# step command
+./create_command_for_juniper_policy.py
+
 # step5
 ./upload_html.sh
