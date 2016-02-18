@@ -516,10 +516,30 @@ TCP_11131	Tcp	11131	-	TRUE	-	-	-
 TCP_11133	Tcp	11133	-	TRUE	-	-	-
 TCP_11134	Tcp	11134	-	TRUE	-	-	-
 TCP_11200	Tcp	11200	-	TRUE	-	-	-
+TCP_11201	Tcp	11201	-	TRUE	-	-	-
+TCP_11202	Tcp	11202	-	TRUE	-	-	-
+TCP_11203	Tcp	11203	-	TRUE	-	-	-
+TCP_11204	Tcp	11204	-	TRUE	-	-	-
+TCP_11205	Tcp	11205	-	TRUE	-	-	-
+TCP_11206	Tcp	11206	-	TRUE	-	-	-
+TCP_11207	Tcp	11207	-	TRUE	-	-	-
+TCP_11208	Tcp	11208	-	TRUE	-	-	-
+TCP_11209	Tcp	11209	-	TRUE	-	-	-
+TCP_11210	Tcp	11210	-	TRUE	-	-	-
 TCP_11211	Tcp	11211	-	TRUE	-	-	-
 TCP_11212	Tcp	11212	-	TRUE	-	-	-
 TCP_11213	Tcp	11213	-	TRUE	-	-	-
 TCP_11500	Tcp	11500	-	TRUE	-	-	-
+TCP_11501	Tcp	11501	-	TRUE	-	-	-
+TCP_11502	Tcp	11502	-	TRUE	-	-	-
+TCP_11503	Tcp	11503	-	TRUE	-	-	-
+TCP_11504	Tcp	11504	-	TRUE	-	-	-
+TCP_11505	Tcp	11505	-	TRUE	-	-	-
+TCP_11506	Tcp	11506	-	TRUE	-	-	-
+TCP_11507	Tcp	11507	-	TRUE	-	-	-
+TCP_11508	Tcp	11508	-	TRUE	-	-	-
+TCP_11509	Tcp	11509	-	TRUE	-	-	-
+TCP_11510	Tcp	11510	-	TRUE	-	-	-
 TCP_11889	Tcp	11889	-	TRUE	-	-	-
 TCP_12300	Tcp	12300	-	TRUE	-	-	-
 TCP_12301	Tcp	12301	-	TRUE	-	-	-
@@ -527,11 +547,13 @@ TCP_12302	Tcp	12302	-	TRUE	-	-	-
 TCP_12303	Tcp	12303	-	TRUE	-	-	-
 TCP_1234	Tcp	1234	-	TRUE	-	-	-
 TCP_12381	Tcp	12381	-	TRUE	-	-	-
+TCP_12383	Tcp	12383	-	TRUE	-	-	-
 TCP_1278	Tcp	1278	-	TRUE	-	-	-
 TCP_1279	Tcp	1279	-	TRUE	-	-	-
 TCP_12889	Tcp	12889	-	TRUE	-	-	-
 TCP_12906	Tcp	12906	-	TRUE	-	-	-
 TCP_13003	Tcp	13003	-	TRUE	-	-	-
+TCP_13005	Tcp	13005	-	TRUE	-	-	-
 TCP_1301	Tcp	1301	-	TRUE	-	-	-
 TCP_13131	Tcp	13131	-	TRUE	-	-	-
 TCP_1314	Tcp	1314	-	TRUE	-	-	-
@@ -558,6 +580,7 @@ TCP_15988	Tcp	15988	-	TRUE	-	-	-
 TCP_15989	Tcp	15989	-	TRUE	-	-	-
 TCP_161	Tcp	161	-	TRUE	-	-	-
 TCP_16163	Tcp	16163	-	TRUE	-	-	-
+TCP_162	Tcp	162	-	TRUE	-	-	-
 TCP_1648	Tcp	1648	-	TRUE	-	-	-
 TCP_1688	Tcp	1688	-	TRUE	-	-	-
 TCP_1700	Tcp	1700	-	TRUE	-	-	-
@@ -668,7 +691,9 @@ TCP_25150	Tcp	25150	-	TRUE	-	-	-
 TCP_25160	Tcp	25160	-	TRUE	-	-	-
 TCP_25161	Tcp	25161	-	TRUE	-	-	-
 TCP_25250	Tcp	25250	-	TRUE	-	-	-
+TCP_2540	Tcp	2540	-	TRUE	-	-	-
 TCP_25475	Tcp	25475	-	TRUE	-	-	-
+TCP_2550	Tcp	2550	-	TRUE	-	-	-
 TCP_2552	Tcp	2552	-	TRUE	-	-	-
 TCP_25901	Tcp	25901	-	TRUE	-	-	-
 TCP_25902	Tcp	25902	-	TRUE	-	-	-
@@ -849,6 +874,7 @@ TCP_5672	Tcp	5672	-	TRUE	-	-	-
 TCP_5696	Tcp	5696	-	TRUE	-	-	-
 TCP_57169	Tcp	57169	-	TRUE	-	-	-
 TCP_5722	Tcp	5722	-	TRUE	-	-	-
+TCP_5780	Tcp	5780	-	TRUE	-	-	-
 TCP_5781	Tcp	5781	-	TRUE	-	-	-
 TCP_5782	Tcp	5782	-	TRUE	-	-	-
 TCP_5783	Tcp	5783	-	TRUE	-	-	-
@@ -1113,6 +1139,7 @@ TCP_9901	Tcp	9901	-	TRUE	-	-	-
 TCP_9907	Tcp	9907	-	TRUE	-	-	-
 TCP_9927	Tcp	9927	-	TRUE	-	-	-
 TCP_9977	Tcp	9977	-	TRUE	-	-	-
+TCP_9994	Tcp	9994	-	TRUE	-	-	-
 TCP_9995	Tcp	9995	-	TRUE	-	-	-
 TCP_9997	Tcp	9997	-	TRUE	-	-	-
 TCP_9998	Tcp	9998	-	TRUE	-	-	-
@@ -1203,6 +1230,9 @@ UDP_8162	Udp	8162	-	TRUE	-	-	-
 UDP_8163	Udp	8163	-	TRUE	-	-	-
 UDP_873	Udp	873	-	TRUE	-	-	-
 UDP_902	Udp	902	-	TRUE	-	-	-
+UDP_9995	Udp	9995	-	TRUE	-	-	-
+UDP_9996	Udp	9996	-	TRUE	-	-	-
+UDP_9997	Udp	9997	-	TRUE	-	-	-
 UltorsTrojan	Tcp	1234	-	TRUE	-	-	Also used by: SubSeven Java client
 UserCheck	tcp	18300	-	TRUE	-	-	Check Point Daemon Protocol
 VPN1_IPSEC_encapsulation	udp	2746	-	TRUE	-	-	Check Point VPN-1 SecuRemote IPSEC Transport Encapsulation Protocol

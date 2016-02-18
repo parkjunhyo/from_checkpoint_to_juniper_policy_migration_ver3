@@ -2,7 +2,7 @@
 
 
 # step1
-./Match_zone_from_network.py 
+./match_zone_from_renew.py
 
 # step2
 ./combine_match_all.py 
