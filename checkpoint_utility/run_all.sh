@@ -19,14 +19,14 @@
 # step7
 ./renew_srv_policy.py
 
+# commnet
+./renew_comment.py
+
 # step8
 ./confirm_renew_files.py
 
 # step5 : nat
 ./renew_global_nat.py
-
-# comment
-./renew_comment.py
 
 # step9
 ./confirm_renew_global_nat.py

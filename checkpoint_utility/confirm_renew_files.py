@@ -3,8 +3,9 @@
 output_src_data = "./source.renew"
 output_dst_data = "./destination.renew"
 output_port_data = "./service.renew"
+output_comment_data = "./comment.renew"
 
-output_data_list = [output_src_data, output_dst_data, output_port_data]
+output_data_list = [output_src_data, output_dst_data, output_port_data, output_comment_data]
 
 for output_data in output_data_list:
 
