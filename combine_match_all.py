@@ -117,8 +117,9 @@ _idx_list_ = []
 _cmt_list_ = []
 for comment_content in comment_contents:
    [ _index_no_, _comment_ ] = comment_content.strip().split("\t")
+   re_string_ = _comment_.split("\xc2\xa0")[0]
    _idx_list_.append(str(_index_no_))
-   _cmt_list_.append(str(_comment_))
+   _cmt_list_.append(str(re_string_))
 
 comment_dict = dict(zip(_idx_list_,_cmt_list_))
 
