@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 
 apt-get install python-pip
-apt-get insatll ipcalc
+apt-get install ipcalc
 apt-get install python-dev
 
 pip install ipaddress
