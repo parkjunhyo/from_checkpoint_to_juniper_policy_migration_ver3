@@ -23,11 +23,12 @@
 # step8
 ./confirm_renew_files.py
 
+# step5 : nat
+./renew_global_nat.py
+
 # step9
 ./confirm_renew_global_nat.py
 
-# step5 : nat
-./renew_global_nat.py
 
 # move file
 mv *.renew ../
