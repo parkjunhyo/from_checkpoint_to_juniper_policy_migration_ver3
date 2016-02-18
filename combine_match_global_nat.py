@@ -9,7 +9,7 @@ files_name_list_to_read = {
                           }
 
 outfile_name = "./result_global_nat_match.txt"
-text_type_outfile_name = "./text_type__global_nat_result.txt"
+text_type_outfile_name = "./text_type_global_nat_result.txt"
 
 def readFile(file_name):
    f = open(file_name, "r")
