@@ -13,9 +13,6 @@
 # step4 : nat source
 ./gen_global_nat.py
 
-# comment
-./gen_comment.py
-
 # step6
 ./renew_srcdst_policy.py
 
@@ -28,9 +25,12 @@
 # step5 : nat
 ./renew_global_nat.py
 
+# comment
+./renew_comment.py
+
 # step9
 ./confirm_renew_global_nat.py
 
 
 # move file
-mv *.renew ../
+cp *.renew ../
