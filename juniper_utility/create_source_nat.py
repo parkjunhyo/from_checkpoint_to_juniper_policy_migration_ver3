@@ -32,7 +32,7 @@ for content_in_file in contents_in_file:
         zone_names_list.append(_zone_)
 duplicated_check = []
 f = open(output_file_name,"a")
-f.write("--------------------------------------------------------\n")
+f.write("---------------------------deine rule set--------------------------\n")
 for _fromzone_ in zone_names_list:
    for _tozone_ in zone_names_list:
       if _fromzone_ != _tozone_:
@@ -48,7 +48,7 @@ f.close()
 # pool
 duplicated_check = []
 f = open(output_file_name,"a")
-f.write("--------------------------------------------------------\n")
+f.write("-----------------------------define pool-----------------------\n")
 for content_in_file in contents_in_file:
    [ _policy_number_, _status_, _from_zone_, _source_objects_, _nat_ip_match_zone_, _nat_ip_ ] = content_in_file.strip().split("\t")
    if _nat_ip_ != "0.0.0.0/0":
@@ -68,29 +68,46 @@ for content_in_file in contents_in_file:
      continue
 
    # rule_set_name
-   global_nat_rule_set_name = "snat_from_%s_to_%s" % (_fromzone_,_tozone_)
+   global_nat_rule_set_name = "snat_from_%s_to_%s" % (_fromzone_, _nat_ip_match_zone_ )
    # source and destination
    common_pool_name = "_".join(_nat_ip_.strip().split("/")[0].split("."))
 
    _source_ip_addr_ = _source_objects_.strip().split(";")
    rule_name = ""
    f = open(output_file_name,"a")
-   f.write("----------------------- %s [ %s ] ------------------------------\n" % (global_nat_rule_set_name, common_pool_name))
+   f.write("-----------------------rule set : %s , pool : %s ------------------------------\n" % (global_nat_rule_set_name, common_pool_name))
    if len(_source_ip_addr_) == 1:
      rule_name = common_pool_name
      cli_command = juniper_source % (global_nat_rule_set_name, rule_name, _source_objects_)
      f.write(cli_command)
+     cli_command = juniper_destination % (global_nat_rule_set_name, rule_name)
+     f.write(cli_command)
+     cli_command = juniper_pool % (global_nat_rule_set_name, rule_name, common_pool_name) 
+     f.write(cli_command)
    else:
-     for _count_ in range(int(len(_source_ip_addr_) / source_count_limit_in_pool)):
-        rule_name = common_pool_name + "_" + str(_count_)
-        cli_command = juniper_source % (global_nat_rule_set_name, rule_name, _source_ip_addr_[_count_])
+     src_counter = 0
+     for _src_ip_ in _source_ip_addr_:
+        rule_name = common_pool_name + "_" + str(int(src_counter / source_count_limit_in_pool))
+        cli_command = juniper_source % (global_nat_rule_set_name, rule_name, _src_ip_)
         f.write(cli_command)
 
-   cli_command = juniper_destination % (global_nat_rule_set_name, rule_name)
-   f.write(cli_command)
-   # pool 
-   cli_command = juniper_pool % (global_nat_rule_set_name, rule_name, common_pool_name) 
+        last_status = 0
+        if (src_counter + 1) == len(_source_ip_addr_):
+          last_status = 1
 
+        if (src_counter + 1) % source_count_limit_in_pool == 0 and not last_status:
+          cli_command = juniper_destination % (global_nat_rule_set_name, rule_name)
+          f.write(cli_command)
+          cli_command = juniper_pool % (global_nat_rule_set_name, rule_name, common_pool_name) 
+          f.write(cli_command)
+          f.write("\n")
+        if last_status:
+          cli_command = juniper_destination % (global_nat_rule_set_name, rule_name)
+          f.write(cli_command)
+          cli_command = juniper_pool % (global_nat_rule_set_name, rule_name, common_pool_name)
+          f.write(cli_command)
+          f.write("\n")
+        src_counter = src_counter + 1
 
    f.close()
          
