@@ -120,10 +120,6 @@ for i_ in range(policy_rule_number):
    for _source_value_ in searching_object_matched_ruld_number(policy_index, sorted_by_zone_source):
       for _destination_value_ in searching_object_matched_ruld_number(policy_index, sorted_by_zone_destination):
 
-         #rule_status = "OK"
-         #if _source_value_[0] == _destination_value_[0]:
-         #  rule_status = "NOT_OK"
-         
          rule_status = ""
          if "0.0.0.0/0" in _destination_value_[1]:
            rule_status = "NOT_OK"

@@ -13,11 +13,6 @@
 # step4
 ./get_static_nat.py
 
-# step command
-./create_command_for_juniper_policy.py
-
-# step nat
-./create_command_for_static_nat_juniper.py
 
 # step source
 ./create_command_for_source_nat_juniper.py
