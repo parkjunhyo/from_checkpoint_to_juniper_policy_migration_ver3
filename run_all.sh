@@ -14,8 +14,3 @@
 ./get_static_nat.py
 
 
-# step source
-./create_command_for_source_nat_juniper.py
-
-# step5
-./upload_html.sh
