@@ -8,6 +8,7 @@ f.close()
 
 
 duplicated_info = []
+zonename_list = []
 for file_name in file_names:
 
    f = open(file_name, "r")
@@ -18,6 +19,8 @@ for file_name in file_names:
    for content_in_file in contents_in_file:
       
       [ policy_no, zone_name, _information_ ] =content_in_file.strip().split("\t")
+      if zone_name not in zonename_list:
+        zonename_list.append(zone_name)
       temp_obj_name = "_".join([zone_name, _information_])
 
       if temp_obj_name not in duplicated_info:
@@ -26,3 +29,13 @@ for file_name in file_names:
         cli_command = "set security zones security-zone %s address-book address %s %s\n" % (zone_name, _information_, _information_)
         f.write(cli_command)
         f.close()
+
+
+
+# zone create
+f = open("./command_to_create_zone_define.txt","a")
+for _zone_ in zonename_list:
+   cli_command = "set security zones security-zone %s\n" % (_zone_)
+   f.write(cli_command)
+f.close()
+
