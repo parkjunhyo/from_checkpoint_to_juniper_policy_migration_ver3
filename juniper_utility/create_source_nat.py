@@ -14,7 +14,7 @@ f.close()
 
 
 juniper_global_nat_option_from = "set security nat source rule-set %s from zone %s\n"
-juniper_global_nat_option_to = "set security nat source rule-set %s to %s\n"
+juniper_global_nat_option_to = "set security nat source rule-set %s to zone %s\n"
 
 juniper_source = "set security nat source rule-set %s rule %s match source-address %s\n"
 juniper_destination = "set security nat source rule-set %s rule %s match destination-address 0.0.0.0/0\n"
