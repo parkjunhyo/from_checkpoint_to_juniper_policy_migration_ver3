@@ -78,9 +78,16 @@ for content_in_file in contents_in_file:
    for app in app_list:
       if app.lower() == "any":
         cli_command = juniper_application_command % (_from_zone_, _to_zone_, policy_name, "any")  
+      elif re.search("icmp", app.lower()):
+        cli_command = juniper_application_command % (_from_zone_, _to_zone_, policy_name, "junos-icmp-all")
+      elif app.lower() == "tcp:21":
+        cli_command = juniper_application_command % (_from_zone_, _to_zone_, policy_name, "junos-ftp")
       else:
         [app_proto,app_port] = app.strip().split(":")
-        application_port_name = "%s_%s" % (app_proto.upper(), app_port) 
+        if re.search("-",app_port):
+          application_port_name = "%s_%s_%s" % (app_proto.upper(), app_port.split("-")[0], app_port.split("-")[1]) 
+        else:
+          application_port_name = "%s_%s" % (app_proto.upper(), app_port) 
         cli_command = juniper_application_command % (_from_zone_, _to_zone_, policy_name, application_port_name)  
       f.write(cli_command)
  
