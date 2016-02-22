@@ -32,7 +32,8 @@ for content_in_file in contents_in_file:
         zone_names_list.append(_zone_)
 duplicated_check = []
 f = open(output_file_name,"a")
-f.write("---------------------------deine rule set--------------------------\n")
+# f.write("---------------------------deine rule set--------------------------\n")
+f.write("\n")
 for _fromzone_ in zone_names_list:
    for _tozone_ in zone_names_list:
       if _fromzone_ != _tozone_:

@@ -20,7 +20,8 @@ juniper_outside = "set security nat static rule-set %s rule %s then static-nat p
 
 
 f = open(output_file_name,"a")
-f.write("--------------------------------------------------------------------------------\n")
+#f.write("--------------------------------------------------------------------------------\n")
+f.write("\n")
 cli_command = juniper_public_nat % (static_nat_rule_set_name)
 f.write(cli_command)
 f.close()
@@ -31,7 +32,8 @@ for content_in_file in contents_in_file:
    [ _public_nat_ip_, _inside_nated_ip_ ] = content_in_file.strip().split("\t")
 
    f = open(output_file_name,"a")
-   f.write("--------------------------------------------------------------------------------\n")
+   #f.write("--------------------------------------------------------------------------------\n")
+   f.write("\n")
 
    # rule_name
    public_ip_number = _public_nat_ip_.strip().split(".")

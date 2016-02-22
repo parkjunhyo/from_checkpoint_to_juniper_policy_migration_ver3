@@ -32,7 +32,8 @@ for content_in_file in contents_in_file:
 
    # policy name
    policy_name = "%s_%s%s" % (_sequence_,_from_zone_,_to_zone_)
-   f.write("------------------------------------ %s [ %s ] ----------------------------------\n" % (_sequence_, policy_name))
+   # f.write("------------------------------------ %s [ %s ] ----------------------------------\n" % (_sequence_, policy_name))
+   f.write("\n")
 
    # source
    sip_list = _source_ip_.strip().split(";")
