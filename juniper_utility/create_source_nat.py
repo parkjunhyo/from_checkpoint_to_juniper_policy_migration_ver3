@@ -68,7 +68,7 @@ for content_in_file in contents_in_file:
      continue
 
    # rule_set_name
-   global_nat_rule_set_name = "snat_from_%s_to_%s" % (_fromzone_, _nat_ip_match_zone_ )
+   global_nat_rule_set_name = "snat_from_%s_to_%s" % (_from_zone_, _nat_ip_match_zone_ )
    # source and destination
    added_name_info = _from_zone_+_nat_ip_match_zone_
    common_pool_name = "_".join(_nat_ip_.strip().split("/")[0].split("."))+"_"+added_name_info
