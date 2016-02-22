@@ -1,6 +1,8 @@
 #! /usr/bin/env python
 
 import re
+import os
+import random
 
 file_names = "./text_type_result.txt"
 output_file_name = "./command_to_create_juniper_policy.txt"
@@ -20,6 +22,8 @@ juniper_permit_command = "set security policies from-zone %s to-zone %s policy %
 juniper_log_command = "set security policies from-zone %s to-zone %s policy %s then log session-close\n"
 juniper_comment = "set security policies from-zone %s to-zone %s policy %s description \"%s\"\n"
 
+temp_random_filename = "./"+str(random.random()).split(".")[1]
+
 for content_in_file in contents_in_file:
  
    [ _sequence_, _status_, _from_zone_, _source_ip_, _to_zone_, _destination_ip_, _service_, _comments_ ] = content_in_file.strip().split("\t")
@@ -36,7 +40,17 @@ for content_in_file in contents_in_file:
       if sip == "0.0.0.0/0":
         cli_command = juniper_source_command % (_from_zone_, _to_zone_, policy_name, "any")
       else:
-        cli_command = juniper_source_command % (_from_zone_, _to_zone_, policy_name, sip)
+        os_cmd = "./valid_ip_check.sh %s %s" % (sip, temp_random_filename)
+        os.system(os_cmd)
+        fr = open(temp_random_filename,"r")
+        fr_contents = fr.readlines()
+        fr.close()
+        os.system("rm -rf temp_random_filename")
+        if len(fr_contents) == 0:
+          cli_command = juniper_source_command % (_from_zone_, _to_zone_, policy_name, sip)
+        else:
+          valid_ip = fr_contents[0].strip()
+          cli_command = juniper_source_command % (_from_zone_, _to_zone_, policy_name, valid_ip)
       f.write(cli_command)
 
    # destination
@@ -45,7 +59,17 @@ for content_in_file in contents_in_file:
       if dip == "0.0.0.0/0":
         cli_command = juniper_destination_command % (_from_zone_, _to_zone_, policy_name, "any")
       else:
-        cli_command = juniper_destination_command % (_from_zone_, _to_zone_, policy_name, dip)
+        os_cmd = "./valid_ip_check.sh %s %s" % (dip, temp_random_filename)
+        os.system(os_cmd)
+        fr = open(temp_random_filename,"r")
+        fr_contents = fr.readlines()
+        fr.close()
+        os.system("rm -rf temp_random_filename")
+        if len(fr_contents) == 0:
+          cli_command = juniper_destination_command % (_from_zone_, _to_zone_, policy_name, dip)
+        else:
+          valid_ip = fr_contents[0].strip()
+          cli_command = juniper_destination_command % (_from_zone_, _to_zone_, policy_name, valid_ip)
       f.write(cli_command)
    
    # application
