@@ -49,7 +49,8 @@ f.close()
 # pool
 duplicated_check = []
 f = open(output_file_name,"a")
-f.write("-----------------------------define pool-----------------------\n")
+#f.write("-----------------------------define pool-----------------------\n")
+f.write("\n")
 for content_in_file in contents_in_file:
    [ _policy_number_, _status_, _from_zone_, _source_objects_, _nat_ip_match_zone_, _nat_ip_ ] = content_in_file.strip().split("\t")
    if _nat_ip_ != "0.0.0.0/0":
@@ -78,7 +79,8 @@ for content_in_file in contents_in_file:
    _source_ip_addr_ = _source_objects_.strip().split(";")
    rule_name = ""
    f = open(output_file_name,"a")
-   f.write("-----------------------rule set : %s , pool : %s ------------------------------\n" % (global_nat_rule_set_name, common_pool_name))
+   #f.write("-----------------------rule set : %s , pool : %s ------------------------------\n" % (global_nat_rule_set_name, common_pool_name))
+   f.write("\n")
    src_counter = 0
    for _src_ip_ in _source_ip_addr_:
       rule_name = common_pool_name + "_" + str(int(src_counter / source_count_limit_in_pool))
