@@ -70,44 +70,35 @@ for content_in_file in contents_in_file:
    # rule_set_name
    global_nat_rule_set_name = "snat_from_%s_to_%s" % (_fromzone_, _nat_ip_match_zone_ )
    # source and destination
-   common_pool_name = "_".join(_nat_ip_.strip().split("/")[0].split("."))
+   added_name_info = _from_zone_+_nat_ip_match_zone_
+   common_pool_name = "_".join(_nat_ip_.strip().split("/")[0].split("."))+"_"+added_name_info
 
    _source_ip_addr_ = _source_objects_.strip().split(";")
    rule_name = ""
    f = open(output_file_name,"a")
    f.write("-----------------------rule set : %s , pool : %s ------------------------------\n" % (global_nat_rule_set_name, common_pool_name))
-   if len(_source_ip_addr_) == 1:
-     rule_name = common_pool_name
-     cli_command = juniper_source % (global_nat_rule_set_name, rule_name, _source_objects_)
-     f.write(cli_command)
-     cli_command = juniper_destination % (global_nat_rule_set_name, rule_name)
-     f.write(cli_command)
-     cli_command = juniper_pool % (global_nat_rule_set_name, rule_name, common_pool_name) 
-     f.write(cli_command)
-   else:
-     src_counter = 0
-     for _src_ip_ in _source_ip_addr_:
-        rule_name = common_pool_name + "_" + str(int(src_counter / source_count_limit_in_pool))
-        cli_command = juniper_source % (global_nat_rule_set_name, rule_name, _src_ip_)
+   src_counter = 0
+   for _src_ip_ in _source_ip_addr_:
+      rule_name = common_pool_name + "_" + str(int(src_counter / source_count_limit_in_pool))
+      cli_command = juniper_source % (global_nat_rule_set_name, rule_name, _src_ip_)
+      f.write(cli_command)
+      last_status = 0
+      if (src_counter + 1) == len(_source_ip_addr_):
+        last_status = 1
+
+      if (src_counter + 1) % source_count_limit_in_pool == 0 and not last_status:
+        cli_command = juniper_destination % (global_nat_rule_set_name, rule_name)
         f.write(cli_command)
-
-        last_status = 0
-        if (src_counter + 1) == len(_source_ip_addr_):
-          last_status = 1
-
-        if (src_counter + 1) % source_count_limit_in_pool == 0 and not last_status:
-          cli_command = juniper_destination % (global_nat_rule_set_name, rule_name)
-          f.write(cli_command)
-          cli_command = juniper_pool % (global_nat_rule_set_name, rule_name, common_pool_name) 
-          f.write(cli_command)
-          f.write("\n")
-        if last_status:
-          cli_command = juniper_destination % (global_nat_rule_set_name, rule_name)
-          f.write(cli_command)
-          cli_command = juniper_pool % (global_nat_rule_set_name, rule_name, common_pool_name)
-          f.write(cli_command)
-          f.write("\n")
-        src_counter = src_counter + 1
+        cli_command = juniper_pool % (global_nat_rule_set_name, rule_name, common_pool_name) 
+        f.write(cli_command)
+        f.write("\n")
+      if last_status:
+        cli_command = juniper_destination % (global_nat_rule_set_name, rule_name)
+        f.write(cli_command)
+        cli_command = juniper_pool % (global_nat_rule_set_name, rule_name, common_pool_name)
+        f.write(cli_command)
+        f.write("\n")
+      src_counter = src_counter + 1
 
    f.close()
          
