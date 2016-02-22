@@ -71,6 +71,7 @@ for content_in_file in contents_in_file:
    global_nat_rule_set_name = "snat_from_%s_to_%s" % (_from_zone_, _nat_ip_match_zone_ )
    # source and destination
    added_name_info = _from_zone_+_nat_ip_match_zone_
+   _p_name_ = "_".join(_nat_ip_.strip().split("/")[0].split("."))
    common_pool_name = "_".join(_nat_ip_.strip().split("/")[0].split("."))+"_"+added_name_info
 
    _source_ip_addr_ = _source_objects_.strip().split(";")
@@ -89,21 +90,16 @@ for content_in_file in contents_in_file:
       if (src_counter + 1) % source_count_limit_in_pool == 0 and not last_status:
         cli_command = juniper_destination % (global_nat_rule_set_name, rule_name)
         f.write(cli_command)
-        cli_command = juniper_pool % (global_nat_rule_set_name, rule_name, common_pool_name) 
+        cli_command = juniper_pool % (global_nat_rule_set_name, rule_name, _p_name_) 
         f.write(cli_command)
         f.write("\n")
       if last_status:
         cli_command = juniper_destination % (global_nat_rule_set_name, rule_name)
         f.write(cli_command)
-        cli_command = juniper_pool % (global_nat_rule_set_name, rule_name, common_pool_name)
+        cli_command = juniper_pool % (global_nat_rule_set_name, rule_name, _p_name_)
         f.write(cli_command)
         f.write("\n")
       src_counter = src_counter + 1
 
    f.close()
          
-
-
-   
-
-
