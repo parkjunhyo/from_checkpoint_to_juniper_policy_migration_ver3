@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 
 class Routing_information: 
- zone_name = ("pub","pri","com","pci")
+ zone_name = ("PUB","PRI","COM","PCI")
 
  network_mask = { 
                   # public zone network  

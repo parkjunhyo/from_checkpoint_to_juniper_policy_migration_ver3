@@ -147,7 +147,7 @@ for i_ in range(policy_rule_number):
            rule_status = "OK"
 
          f.write("\n\n")
-         f.write("Policy ID : %s, From : %s, To : %s  ..... [ %s ]\n\n" % (str(policy_index),_source_value_[0],_destination_value_[0],rule_status))
+         f.write("Policy ID : %s, From : %s, To : %s  ..... [ %s ] [ %s_%s%s ]\n\n" % (str(policy_index),_source_value_[0],_destination_value_[0],rule_status,str(policy_index),_source_value_[0],_destination_value_[0]))
          f.write("Source IP Address : \n")
          source_members_string = ""
          source_members_group = []
