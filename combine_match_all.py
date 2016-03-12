@@ -155,7 +155,7 @@ for i_ in range(policy_rule_number):
             source_members_group.append(_src_network_)
             f.write(_src_network_+"\n")
          source_members_string = ";".join(source_members_group)
-         f.write("\n")
+         ##f.write("\n")
 
          f.write("Destination IP Address : \n")
          desti_members_string = ""
